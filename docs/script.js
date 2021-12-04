@@ -17,3 +17,15 @@ targets.forEach(function (target) {
   target.classList.add("opacity-0");
   observer.observe(target);
 });
+
+$(function() {
+  $.scrollify({
+    section : "section",
+    easing: "swing",
+    interstitialSection : "#header,#footer",
+    scrollSpeed: 600,
+    scrollbars: true,
+    touchScroll:true,
+  });
+});
+
