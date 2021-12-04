@@ -131,6 +131,7 @@ Version:1.1.1
 
 $(function(){
   $('header,main').inertiaScroll({
-    parent: $("#scroll")
+    parent: $("#scroll"),
+    parentDelta:0.3,
   });
 });
