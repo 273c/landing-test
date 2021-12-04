@@ -4,6 +4,5 @@ src/
 package-lock.json
 package.json
 tailwind.config.js
-TODO
 .gitignore
 My project.pdf
