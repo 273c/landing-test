@@ -18,14 +18,15 @@ targets.forEach(function (target) {
   observer.observe(target);
 });
 
-$(function() {
-  $.scrollify({
-    section : "section",
-    easing: "easeOutExpo",
-    interstitialSection : "#header,#footer",
-    scrollSpeed: 600,
-    scrollbars: true,
-    touchScroll:true,
+
+
+/* ============================================= */
+
+
+$(function(){
+  $('header,main,footer').inertiaScroll({
+    parent: $("#easescroll"),
+    parentDelta:0.2,
+
   });
 });
-
