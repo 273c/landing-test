@@ -21,7 +21,7 @@ targets.forEach(function (target) {
 $(function() {
   $.scrollify({
     section : "section",
-    easing: "swing",
+    easing: "easeOutExpo",
     interstitialSection : "#header,#footer",
     scrollSpeed: 600,
     scrollbars: true,
