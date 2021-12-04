@@ -127,3 +127,10 @@ Version:1.1.1
 
   };
 })(jQuery);
+
+
+$(function(){
+  $('header,main').inertiaScroll({
+    parent: $("#scroll")
+  });
+});

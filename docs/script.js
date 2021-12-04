@@ -19,14 +19,3 @@ targets.forEach(function (target) {
 });
 
 
-
-/* ============================================= */
-
-
-$(function(){
-  $('header,main,footer').inertiaScroll({
-    parent: $("#easescroll"),
-    parentDelta:0.2,
-
-  });
-});
