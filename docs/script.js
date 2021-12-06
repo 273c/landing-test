@@ -35,3 +35,15 @@ $('#page-link a[href*="#"]').click(function () {//全てのページ内リンク
 	$('body,html').animate({scrollTop: pos}, 800); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
 	return false;
 });
+
+
+$(document).ready(function() {
+	$(".nav-toggler").each(function(_, navToggler) {
+	  var target = $(navToggler).data("target");
+	  $(navToggler).on("click", function() {
+		$(target).animate({
+		  height: "toggle"
+		});
+	  });
+	});
+  });
