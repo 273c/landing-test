@@ -122,8 +122,11 @@
 <section class="homescreen text-white body-font w-full lg:h-screen h-full  items-center bg-book justify-center" >
     <div class="container md:h-screen px-2 lg:pt-18 mx-auto  ">
         <div class="flex flex-col text-center w-full pt-20 mb-10 ">
-          <img class="hidden lg:inline-block w-4/5 xl:w-3/5 mx-auto mb-16 object-contain object-center rounded" alt="hero" src="image/aori.png">
-          <img class="lg:hidden w-full mx-auto px-2 my-6 md:px-8 object-contain object-center rounded" alt="hero" src="image/aori_mobile.png">
+
+          <picture class="object-contain object-center">
+            <img class="hidden lg:inline-block w-4/5 xl:w-3/5 mx-auto mb-16 " alt="hero" src="image/aori.png">
+            <img class="lg:hidden w-full mx-auto px-2 my-6 md:px-8 " alt="hero" src="image/aori_mobile.png">
+          </picture>
 
           <p class=" mx-auto leading-relaxed text-base mt-2 px-6">今回の喫茶食堂シナリオ集では、様々なシナリオを経た「継続探索者」にクローズアップ。</p>
 
@@ -190,9 +193,15 @@
     <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
 
       <div class="lg:w-3/4 w-full mx-auto">
+
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" src="image/trailer/sebata1.png">
-        </div>
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/sebata1.webp" type="image/webp"/>
+            <img src="image/trailer/sebata1.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
+          </div>
 
         <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
           <div class="mx-4 text-center sm:inline-block hidden">
@@ -268,7 +277,12 @@
 
       <div class="w-3/4 mx-auto">
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-center w-2/3" src="image/trailer/sebata2.png">
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/sebata2.webp" type="image/webp"/>
+            <img src="image/trailer/sebata2.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
         </div>
 
         <div class="w-full justify-center  items-center flex flex-col sm:flex-row mt-6 mb-6">
@@ -337,7 +351,12 @@
 
       <div class="w-3/4 mx-auto">
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-center w-2/3" src="image/trailer/sebata3.png">
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/sebata3.webp" type="image/webp"/>
+            <img src="image/trailer/sebata3.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
         </div>
 
         <div class="w-full justify-center  items-center flex flex-col sm:flex-row mt-6 mb-6">
@@ -407,7 +426,12 @@
 
       <div class="w-3/4 mx-auto">
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-center w-2/3" src="image/trailer/koduki1.png">
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/koduki1.webp" type="image/webp"/>
+            <img src="image/trailer/koduki1.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
         </div>
 
         <div class="w-full justify-center  items-center flex flex-col sm:flex-row mt-6 mb-6">
@@ -477,7 +501,12 @@
 
       <div class="w-3/4 mx-auto">
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-center w-2/3" src="image/trailer/koduki2.jpg">
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/koduki2webp" type="image/webp"/>
+            <img src="image/trailer/koduki2.jpg"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
         </div>
 
         <div class="w-full justify-center  items-center flex flex-col sm:flex-row mt-6 mb-6">
@@ -547,7 +576,12 @@
 
       <div class="w-3/4 mx-auto">
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-center w-2/3" src="image/trailer/miyaku.png">
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/miyaku.webp" type="image/webp"/>
+            <img src="image/trailer/miyaku.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
         </div>
 
         <div class="w-full justify-center  items-center flex flex-col sm:flex-row mt-6 mb-6">
@@ -618,7 +652,12 @@
 
       <div class="w-3/4 mx-auto">
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-center w-2/3" src="image/trailer/beta.png">
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/beta.webp" type="image/webp"/>
+            <img src="image/trailer/beta.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
         </div>
 
         <div class="w-full justify-center  items-center flex flex-col sm:flex-row mt-6 mb-6">
@@ -688,7 +727,12 @@
 
       <div class="w-3/4 mx-auto">
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-center w-2/3" src="image/trailer/hoshino.png">
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/hoshino.webp" type="image/webp"/>
+            <img src="image/trailer/hoshino.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
         </div>
 
         <div class="w-full justify-center  items-center flex flex-col sm:flex-row mt-6 mb-6">
@@ -759,7 +803,12 @@
 
       <div class="w-3/4 mx-auto">
         <div class="rounded-lg overflow-hidden">
-          <img alt="content" class="rounded-md object-contain container object-center w-2/3" src="image/trailer/tatsuhara.jpg">
+          <!-- trailer webp -->
+          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+            <source srcset="image/trailer/tatsuhara.webp" type="image/webp"/>
+            <img src="image/trailer/tatsuhara.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+          </picture>
+          <!-- trailer webp end -->
         </div>
 
         <div class="w-full justify-center  items-center flex flex-col sm:flex-row mt-6 mb-6">
