@@ -130,9 +130,9 @@ Version:1.1.1
 
 
 $(function(){
-  $('header,main').inertiaScroll({
+  $('main').inertiaScroll({
     parent: $("#scroll"),
-    parentDelta:0.1,
+    parentDelta:0.04,
   });
 });
 

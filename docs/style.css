@@ -987,11 +987,6 @@ video {
   background-color: transparent;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-}
-
 .bg-book {
   --tw-bg-opacity: 1;
   background-color: rgba(48, 52, 88, var(--tw-bg-opacity));
@@ -1084,9 +1079,9 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-20 {
@@ -1101,10 +1096,6 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .pb-8 {
@@ -1390,6 +1381,102 @@ video {
   }
 }
 
+#header{
+  position: fixed;
+  /*fixedを設定して固定*/
+  z-index: 999;
+  /*最前面へ*/
+  /*以下はレイアウトのためのCSS*/
+  display: flex;
+  color:#fff;
+}
+
+.cls-1.change-color{
+  fill:none;
+  stroke:#595d79;
+  stroke-miterlimit:10;
+  stroke-width:4px;
+  transition: color 0.4s ease-out;
+}
+
+.logo-circle.change-color{
+  width:70px;
+  padding: 4px;
+  background: transparent;
+  border-radius: 2px;
+  border-color:#595d79;
+  border-style: solid;
+  transition: color 0.4s ease-out;
+}
+
+/*==ふわっと出現させるためのCSS*/
+
+/*　上に上がる動き　*/
+
+#header.UpMove{
+  position: fixed;
+  display: none;
+  -webkit-animation: UpAnime 0.5s forwards;
+          animation: UpAnime 0.5s forwards;
+}
+
+@-webkit-keyframes UpAnime{
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes UpAnime{
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#header.DownMove{
+  position: fixed;
+  display: flex;
+  -webkit-animation: DownAnime 0.5s forwards;
+          animation: DownAnime 0.5s forwards;
+}
+
+@-webkit-keyframes DownAnime{
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes DownAnime{
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Scenario icon */
 
 .icon{
@@ -1485,7 +1572,7 @@ video {
   position: fixed;
   right: 15px;
   bottom:15px;
-  z-index: 2;
+  z-index: 0;
   /*はじめは非表示*/
   opacity: 0;
   transform: translateY(100px);
@@ -1496,18 +1583,6 @@ video {
 #page-top.UpMove{
   -webkit-animation: UpAnime 0.5s forwards;
           animation: UpAnime 0.5s forwards;
-}
-
-@-webkit-keyframes UpAnime{
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @keyframes UpAnime{
@@ -1527,18 +1602,6 @@ video {
 #page-top.DownMove{
   -webkit-animation: DownAnime 0.5s forwards;
           animation: DownAnime 0.5s forwards;
-}
-
-@-webkit-keyframes DownAnime{
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(100px);
-  }
 }
 
 @keyframes DownAnime{

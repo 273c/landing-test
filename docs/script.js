@@ -47,3 +47,19 @@ $(document).ready(function() {
 	  });
 	});
   });
+
+
+
+// スクロールするとロゴの色変更
+$(function () {
+	$(window).on("scroll", function () {
+	  const sliderHeight = $("#1").height();
+	  if (sliderHeight - 40 < $(this).scrollTop()) {
+		$(".cls-1").addClass("change-color");
+		$(".logo-circle").addClass("change-color");
+	  } else {
+		$(".cls-1").removeClass("change-color");
+		$(".logo-circle").addClass("change-color");
+	  }
+	});
+  });
