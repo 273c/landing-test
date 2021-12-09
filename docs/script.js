@@ -43,11 +43,11 @@ $(function () {
 	  const sliderHeight = $("#1").height();
 	  if (sliderHeight - 80 < $(this).scrollTop()) {
 		$(".cls-1").addClass("change-color");
-		$(".logo-circle").addClass("change-color");
+		$(".logo-circle2").addClass("change-color");
         $(".hum").addClass("change-color");
 	  } else {
 		$(".cls-1").removeClass("change-color");
-		$(".logo-circle").addClass("change-color");
+		$(".logo-circle2").addClass("change-color");
         $(".hum").addClass("change-color");
 	  }
 	});
