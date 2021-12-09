@@ -41,7 +41,7 @@ $('#page-link a[href*="#"]').click(function () {//全てのページ内リンク
 $(function () {
 	$(window).on("scroll", function () {
 	  const sliderHeight = $("#1").height();
-	  if (sliderHeight - 40 < $(this).scrollTop()) {
+	  if (sliderHeight - 80 < $(this).scrollTop()) {
 		$(".cls-1").addClass("change-color");
 		$(".logo-circle").addClass("change-color");
         $(".hum").addClass("change-color");
