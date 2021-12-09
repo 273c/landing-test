@@ -44,9 +44,11 @@ $(function () {
 	  if (sliderHeight - 40 < $(this).scrollTop()) {
 		$(".cls-1").addClass("change-color");
 		$(".logo-circle").addClass("change-color");
+        $(".hum").addClass("change-color");
 	  } else {
 		$(".cls-1").removeClass("change-color");
 		$(".logo-circle").addClass("change-color");
+        $(".hum").addClass("change-color");
 	  }
 	});
   });
