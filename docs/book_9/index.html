@@ -44,19 +44,19 @@
 <!-- Create Navbar Menu -->
 
 
-	<nav class="fixed px-4 py-2 flex justify-between items-center w-screen bg-transparent">
-		<a class="text-3xl mt-2 ml-0 font-bold leading-none" href="#">
+	<nav class="fixed flex items-center justify-between w-screen px-4 py-2 bg-transparent">
+		<a class="mt-2 ml-0 text-3xl font-bold leading-none" href="#">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle2"  viewBox="0 0 173.81 164.24"><rect class="cls-1" x="4.94" y="3.82" width="14.34" height="43.02"/><polyline class="cls-1" points="25.01 3.82 47.95 3.82 32.66 20.02 46.04 20.02 30.75 36.33 46.04 34.72"/><polyline class="cls-1" points="55.6 3.82 82.37 3.82 70.89 43.97"/><line class="cls-1" x1="68.98" y1="3.82" x2="51.78" y2="46.04"/><line class="cls-1" x1="2.07" y1="55.44" x2="80.45" y2="55.44"/><line class="cls-1" x1="34.57" y1="55.44" x2="2.07" y2="103.24"/><line class="cls-1" x1="49.86" y1="55.44" x2="80.45" y2="103.24"/><line class="cls-1" x1="88.1" y1="9.56" x2="172.22" y2="9.56"/><line class="cls-1" x1="112.96" x2="112.96" y2="22.94"/><line class="cls-1" x1="147.37" x2="147.37" y2="22.94"/><polyline class="cls-1" points="88.1 51.62 130.16 17.21 172.22 51.62"/><line class="cls-1" x1="99.57" y1="55.44" x2="158.84" y2="55.44"/><circle class="cls-1" cx="158.36" cy="79.82" r="10.04"/><circle class="cls-1" cx="99.09" cy="79.82" r="10.04"/><circle class="cls-1" cx="41.74" cy="79.82" r="10.04"/><polyline class="cls-1" points="15.45 131.92 67.07 131.92 67.07 97.51 15.45 97.51 15.45 160.6 40.3 151.04"/><line class="cls-1" x1="21.19" y1="114.71" x2="61.34" y2="114.71"/><line class="cls-1" x1="40.78" y1="138.61" x2="77.35" y2="161.79"/><polyline class="cls-1" points="90.01 122.36 90.01 97.51 168.4 97.51 168.4 122.36"/><rect class="cls-1" x="105.31" y="110.89" width="45.88" height="19.12"/><line class="cls-1" x1="95.75" y1="145.3" x2="162.66" y2="145.3"/><line class="cls-1" x1="128.25" y1="135.74" x2="128.25" y2="160.6"/><line class="cls-1" x1="90.01" y1="160.6" x2="168.4" y2="160.6"/><line class="cls-1" x1="41.26" y1="44.93" x2="41.26" y2="54.49"/><line class="cls-1" x1="129.21" y1="29.63" x2="129.21" y2="86.99"/><line class="cls-1" x1="62.29" y1="151.04" x2="79.5" y2="143.39"/></svg>
 		</a>
 
 
-		<div class="absolute md:right-6 right-2 grid grid-cols-3 text-center items-center md:gap-2 gap-1">
-      <div><a class="py-2 px-4 border border-white hover:border-book4 hover:text-book4 text-md text-white font-bold rounded-xl transition duration-200" href="https://kuizy.net/analysis/11086">シナリオ診断</a></div>
-      <div><a class="py-2 px-4  hover:border-book4 hover:text-book4  text-sm text-white font-bold transition duration-200" href=""><i class="im im-twitter im-3x"></i></a>
+		<div class="absolute grid items-center grid-cols-3 gap-1 text-center md:right-6 right-2 md:gap-2">
+      <div><a class="px-4 py-2 font-bold text-white transition duration-200 border border-white hover:border-book4 hover:text-book4 text-md rounded-xl" href="https://kuizy.net/analysis/11086">シナリオ診断</a></div>
+      <div><a class="px-4 py-2 text-sm font-bold text-white transition duration-200 hover:border-book4 hover:text-book4" href=""><i class="im im-twitter im-3x"></i></a>
       </div>
       <div>
-        <button class="navbar-burger flex items-center text-white p-3 ">
-          <svg class="block md:h-8 md:w-8 w-6 h-6 fill-current hum" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <button class="flex items-center p-3 text-white navbar-burger ">
+          <svg class="block w-6 h-6 fill-current md:h-8 md:w-8 hum" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z">
           </svg>
         </button>
@@ -64,15 +64,15 @@
 		</div>
 
 	</nav>
-	<div class="navbar-menu relative z-50 hidden transition duration-200">
-		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 "></div>
-		<nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-4 bg-book2 bg-navibar  overflow-y-auto ">
+	<div class="relative z-50 hidden transition duration-800 navbar-menu">
+		<div class="fixed inset-0 hidden bg-gray-800 opacity-25 navbar-backdrop md:inline-block"></div>
+		<nav class="fixed top-0 bottom-0 right-0 flex flex-col w-full px-4 py-6 overflow-y-auto md:max-w-sm md:w-5/6 bg-book2 bg-navibar ">
 			<div class="flex items-center mb-8">
 				<div class="mr-auto " >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle2"  viewBox="0 0 173.81 164.24"><rect class="cls-12" x="4.94" y="3.82" width="14.34" height="43.02"/><polyline class="cls-12" points="25.01 3.82 47.95 3.82 32.66 20.02 46.04 20.02 30.75 36.33 46.04 34.72"/><polyline class="cls-12" points="55.6 3.82 82.37 3.82 70.89 43.97"/><line class="cls-12" x1="68.98" y1="3.82" x2="51.78" y2="46.04"/><line class="cls-12" x1="2.07" y1="55.44" x2="80.45" y2="55.44"/><line class="cls-12" x1="34.57" y1="55.44" x2="2.07" y2="103.24"/><line class="cls-12" x1="49.86" y1="55.44" x2="80.45" y2="103.24"/><line class="cls-12" x1="88.1" y1="9.56" x2="172.22" y2="9.56"/><line class="cls-12" x1="112.96" x2="112.96" y2="22.94"/><line class="cls-12" x1="147.37" x2="147.37" y2="22.94"/><polyline class="cls-12" points="88.1 51.62 130.16 17.21 172.22 51.62"/><line class="cls-12" x1="99.57" y1="55.44" x2="158.84" y2="55.44"/><circle class="cls-12" cx="158.36" cy="79.82" r="10.04"/><circle class="cls-12" cx="99.09" cy="79.82" r="10.04"/><circle class="cls-12" cx="41.74" cy="79.82" r="10.04"/><polyline class="cls-12" points="15.45 131.92 67.07 131.92 67.07 97.51 15.45 97.51 15.45 160.6 40.3 151.04"/><line class="cls-12" x1="21.19" y1="114.71" x2="61.34" y2="114.71"/><line class="cls-12" x1="40.78" y1="138.61" x2="77.35" y2="161.79"/><polyline class="cls-12" points="90.01 122.36 90.01 97.51 168.4 97.51 168.4 122.36"/><rect class="cls-12" x="105.31" y="110.89" width="45.88" height="19.12"/><line class="cls-12" x1="95.75" y1="145.3" x2="162.66" y2="145.3"/><line class="cls-12" x1="128.25" y1="135.74" x2="128.25" y2="160.6"/><line class="cls-12" x1="90.01" y1="160.6" x2="168.4" y2="160.6"/><line class="cls-12" x1="41.26" y1="44.93" x2="41.26" y2="54.49"/><line class="cls-12" x1="129.21" y1="29.63" x2="129.21" y2="86.99"/><line class="cls-12" x1="62.29" y1="151.04" x2="79.5" y2="143.39"/></svg>
 				</div>
 				<button class="navbar-close">
-					<svg class="h-8 w-8 text-white cursor-pointer hover:text-book4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<svg class="w-8 h-8 text-white cursor-pointer hover:text-book4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
 					</svg>
 				</button>
@@ -80,37 +80,37 @@
 			<div>
 				<ul class="text-md">
 					<li class="mb-1">
-						<a class="block p-4  font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#">TOP</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#">TOP</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4  font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#sub">頒布詳細</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#sub">頒布詳細</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#1">GIVE me MUSCLE!</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#1">GIVE me MUSCLE!</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#2">探索者対抗!!二人三脚障害物レース</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#2">探索者対抗!!二人三脚障害物レース</a>
 					</li>
           <li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#3">座禅 -THE ZEN-</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#3">座禅 -THE ZEN-</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#4">探索者が神話生物相手に無双するようですよ？</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#4">探索者が神話生物相手に無双するようですよ？</a>
 					</li>
           <li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#5">彼方より来たるディアスティマ</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#5">彼方より来たるディアスティマ</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#6">東京チアフルコラボ</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#6">東京チアフルコラボ</a>
 					</li>
           <li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#7">誰そ彼タイムカプセル</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#7">誰そ彼タイムカプセル</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#8">道連れラリーレイド</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#8">道連れラリーレイド</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 font-semibold text-white hover:bg-book3 hover:text-book rounded" href="#9">夢見るホーリーキャロル</a>
+						<a class="block p-4 font-semibold text-white rounded hover:bg-book3 hover:text-book" href="#9">夢見るホーリーキャロル</a>
 					</li>
 				</ul>
 			</div>
@@ -126,18 +126,18 @@
 
 
 
-  <section class="homescreen w-full m-0 flex flex-col   text-gray-100" >
+  <section class="flex flex-col w-full m-0 text-gray-100 homescreen" >
 
-    <div class="container h-screen mx-auto flex px-5 py-4 items-center justify-center flex-col">
+    <div class="container flex flex-col items-center justify-center h-screen px-5 py-4 mx-auto">
 
-      <picture class="lg:w-3/6 w-4/5 mb-16 mt-18 object-contain object-center">
+      <picture class="object-contain object-center w-4/5 mb-16 lg:w-3/6 mt-18">
         <source srcset="image/logo.webp" type="image/webp"/>
         <img alt="hero" src="image/logo.png">
       </picture>
 
 
         <!-- lg only -->
-    <div class="lg:grid lg:grid-cols-5 hidden lg:inline-block flex-wrap gap-2 justify-center" id="page-link">
+    <div class="flex-wrap justify-center hidden gap-2 lg:grid lg:grid-cols-5 lg:inline-block" id="page-link">
           <div class="mx-5">
             <a href="#1" class="btnripple"><img src="image/icon/1.png" alt="image" class="icon"> </a>
           </div>
@@ -154,7 +154,7 @@
             <a href="#5" class="btnripple"><img src="image/icon/5.png" alt="image" class="icon"></a>
           </div>
     </div>
-    <div class="lg:m-1/2 mt-8 lg:grid lg:grid-cols-4 hidden lg:inline-block gap-2 mx-auto" id="page-link">
+    <div class="hidden gap-2 mx-auto mt-8 lg:m-1/2 lg:grid lg:grid-cols-4 lg:inline-block" id="page-link">
         <div class="mx-5">
           <a href="#6" class="btnripple"><img src="image/icon/6.png" alt="image" class="icon"></a>
         </div>
@@ -171,7 +171,7 @@
 <!-- lg only end -->
 
 <!-- sm only -->
-<div class="grid grid-cols-3 lg:hidden flex-wrap gap-2 justify-center w-full items-center" id="page-link">
+<div class="grid flex-wrap items-center justify-center w-full grid-cols-3 gap-2 lg:hidden" id="page-link">
   <div class="mx-4">
     <a href="#1" class="btnripple"><img src="image/icon/1.png" alt="image" class="icon"> </a>
   </div>
@@ -207,81 +207,74 @@
 
 
 <!-- sub section   -->
-<section class="homescreen  text-white w-full md:h-screen h-full  items-center  justify-center" id="sub">
-    <div class="container px-2  mx-auto  ">
-        <div class="flex flex-col text-center mb-10 pt-24">
+<section class="items-start justify-center w-full h-full mb-8 text-white lg:h-screen " id="sub">
+    <div class="container px-2 mx-auto ">
+        <div class="flex flex-col pt-24 mb-10 text-center">
 
           <picture class="object-contain object-center">
-            <img class="hidden lg:inline-block w-4/5 xl:w-3/5 mx-auto mb-16 " alt="hero" src="image/aori.png">
-            <img class="lg:hidden w-full mx-auto px-2 my-6 md:px-8 " alt="hero" src="image/aori_mobile.png">
+            <img class="hidden w-4/5 mx-auto mb-16 lg:inline-block xl:w-3/5 " alt="hero" src="image/aori.png">
+            <img class="w-full px-2 mx-auto my-6 lg:hidden md:px-8 " alt="hero" src="image/aori_mobile.png">
           </picture>
 
-          <p class=" mx-auto leading-relaxed text-base mt-2 px-6">今回の喫茶食堂シナリオ集では、様々なシナリオを経た「継続探索者」に注目。<BR>収録シナリオ本数は過去最多の<B>９本</B>。</p>
+          <p class="px-6 mx-auto mt-2 text-base leading-relaxed ">今回の喫茶食堂シナリオ集では、様々なシナリオを経た「継続探索者」に注目。<BR>収録シナリオ本数は過去最多の<B>９本</B>。</p>
 
 
-          <div class="w-full lg:mx-8 md:flex px-5 pt-8  md:flex-row md:inline-flex justify-center items-center">
-            <div class="lg:w-1/4 md:w-1/3 w-full md:mb-0 items-center ">
+          <div class="justify-center w-full px-5 pt-8 items-top lg:mx-8 md:flex md:flex-row ">
+            <div class="items-center w-full lg:w-2/6 md:w-1/3 md:mb-0 ">
               <a href="https://teaparty-table.booth.pm/">
             <!-- trailer webp -->
-              <picture class="object-contain object-center rounded  transform ">
+              <picture class="object-contain object-center transform rounded ">
                 <source srcset="image/book.webp" type="image/webp"/>
-                <img src="image/book.png"  class=" object-contain object-center rounded transform " /><!-- ブラウザがwebpに対応していない場合に表示 -->
+                <img src="image/book.png"  class="object-contain object-center transform rounded " /><!-- ブラウザがwebpに対応していない場合に表示 -->
               </picture>
              <!-- trailer webp end -->
             </a>
             </div>
 
-            <div class="lg:w-1/2 md:w-2/3 w-full pl-4 relative sm:-top-1 -top-10 md:items-left text-left items-center ">
-              <h1 class="title-font text-4xl mb-2 font-medium font-serif text-book4">継続限</h1>
-              <p class="inline-block text-sm mb-4 font-medium text-book4">継続探索者限定シナリオ集</p>
+            <div class="relative w-full pl-4 text-left lg:w-1/2 md:w-2/3 lg:top-10 md:top-8 -top-14 md:items-left ">
+              <h1 class="mb-2 font-serif text-5xl font-medium title-font text-book4">継続限</h1>
+              <p class="inline-block mb-4 font-medium text-md text-book4">継続探索者限定シナリオ集</p>
             <!-- star rating -->
             <ul class="flex flex-row mb-2">
-              <li class=" font-bold">SPLL No.</li>
+              <li class="font-bold ">SPLL No.</li>
               <li class="ml-4">P107001</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row">
-              <li class=" font-bold">ジャンル</li>
+            <ul class="md:flex md:flex-row">
+              <li class="font-bold ">ジャンル</li>
               <li class="ml-4">クトゥルフ神話TRPG（6版/7版）</li>
               <!-- 2 -->
             </ul>
 
-            <ul class="list-t flex flex-row">
-              <li class=" font-bold">発行日</li>
+            <ul class="list-t md:flex md:flex-row">
+              <li class="font-bold ">発行日</li>
               <li class="ml-4">2021/12/30　新コミックマーケット99 １日目</li>
             </ul>
-            <ul class="flex flex-row ">
+            <ul class="md:flex md:flex-row ">
               <!-- 2 -->
-              <li class=" font-bold">スペース</li>
+              <li class="font-bold ">スペース</li>
               <li class="ml-4">西い-46B</li>
             </ul>
-            <ul class="flex flex-row mt-2">
-              <li class=" font-bold">値段</li>
+            <ul class="mt-4 md:flex md:flex-row">
+              <li class="font-bold ">値段</li>
               <li class="ml-4">1100円（冊子版イベント価格）</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row">
-              <li class=" font-bold">ページ数</li>
-              <li class="ml-4">B5/108p</li>
+            <ul class="md:flex md:flex-row">
+              <li class="font-bold ">仕様</li>
+              <li class="ml-4">B5/108p<BR>特殊紙表紙/金箔押し/白インク2度刷り/表3,4印刷</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row ">
-              <li class=" font-bold">仕様</li>
-              <li class="ml-4">特殊紙表紙/金箔押し/白インク2度刷り/表3,4印刷</li>
-              <!-- 2 -->
-            </ul>
-            
-
-            <ul class="flex flex-row mt-4">
-              <li class=" font-bold">執筆者</li>
+            <ul class="mt-4 md:flex md:flex-row">
+              <li class="font-bold ">執筆者</li>
               <li class="ml-4">せばた　香月悠　ベータ<BR>星野　みやく　竜原</li>
             </ul>
             <!-- star rating end -->
 
               <div class="flex mt-6">
-            <a href="#_" class="inline-flex items-center justify-center px-4 xl:px-8 py-2 text-sm sm:text-xl text-center text-gray-200 no-underline align-middle transition-all duration-300 ease-in-out bg-transparent border-2 border-book2 border-solid rounded-lg cursor-pointer select-none hover:text-book4 hover:border-book4 focus:shadow-xs focus:no-underline">
+            <a href="#_" class="inline-flex items-center justify-center px-4 py-2 text-center text-gray-200 no-underline align-middle transition-all duration-300 ease-in-out bg-transparent border-2 border-solid rounded-lg cursor-pointer select-none text-md xl:px-8 sm:text-xl border-book2 hover:text-book4 hover:border-book4 focus:shadow-xs focus:no-underline">
               BOOTH</a>
-              <a href="#_" class="mx-6 inline-flex items-center justify-center px-4 xl:px-6 py-2 text-sm sm:text-xl text-center text-gray-200 no-underline align-middle transition-all duration-300 ease-in-out bg-transparent border-2 border-book2 border-solid rounded-lg cursor-pointer select-none hover:text-book4 hover:border-book4 focus:shadow-xs focus:no-underline">
+              <a href="#_" class="inline-flex items-center justify-center px-4 py-2 mx-6 text-center text-gray-200 no-underline align-middle transition-all duration-300 ease-in-out bg-transparent border-2 border-solid rounded-lg cursor-pointer select-none text-md xl:px-6 sm:text-xl border-book2 hover:text-book4 hover:border-book4 focus:shadow-xs focus:no-underline">
                 イエローサブマリン</a>
               </div>
             </div>
@@ -293,76 +286,76 @@
     </div>
   </section>
 
-  <!-- parallex   <section class="homescreen flex mt-0 items-center justify-center w-full h-28 m-auto bg-book2"></section>  -->
+  <!-- parallex   <section class="flex items-center justify-center w-full m-auto mt-0 homescreen h-28 bg-book2"></section>  -->
 
 
   <!-- contents -->
 
 
 
-  <section class="text-gray-600 bg-white body-font justify-center" id="1">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-white body-font" id="1">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/sebata1.webp" type="image/webp"/>
-            <img src="image/trailer/sebata1.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/sebata1.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="md:inline-block hidden mx-4 text-center ">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block ">
             <div class="inline-flex">
-              <img src="image/icon/1.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/1.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
          <div class="mx-2 my-2 text-left">
-          <h1 class="sm:text-4xl text-3x1 font-serif italic text-book2">壁をブッ壊せ！</h1>
+          <h1 class="font-serif italic sm:text-4xl text-book2">壁をブッ壊せ！</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  mb-4 md:flex-row mt-4 lg:px-0 px-4">
-          <div class="md:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
-              <p class="text-base member font-bold">せばた</p>
+              <p class="text-base font-bold member">せばた</p>
             </div> 
           </div>
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
             <!-- star rating -->
-            <ul class="list-t flex flex-row text-book">
-              <li class=" font-bold">プレイ人数</li>
+            <ul class="flex flex-row list-t text-book">
+              <li class="font-bold ">プレイ人数</li>
               <li class="ml-4">1人</li>
             </ul>
             <ul class="flex flex-row text-book">
               <!-- 2 -->
-              <li class=" font-bold">プレイ時間</li>
+              <li class="font-bold ">プレイ時間</li>
               <li class="ml-4">0.5時間～</li>
             </ul>
             <ul class="flex flex-row text-book">
-              <li class=" font-bold">タイプ</li>
+              <li class="font-bold ">タイプ</li>
               <li class="ml-4">クローズド/現代日本</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row mt-4 text-book">
-              <li class=" font-bold">推奨技能</li>
+            <ul class="mt-4 text-book">
+              <li class="font-bold ">推奨技能</li>
               <li class="ml-4">なし </li>
             </ul>
-            <ul class="flex flex-row text-book">
-              <li class=" font-bold">備考</li>
+            <ul class=" text-book">
+              <li class="font-bold ">備考</li>
               <li class="ml-4">確定で後遺症を持ち帰ることになる。<BR>何かしらNGのある探索者は避けた方が無難だろう。</li>
             </ul>
             <!-- star rating end -->
 
-            <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">プレイヤー抱腹絶倒のショートショートシナリオ！こんなシナリオでこんなにウケることってある？笑いすぎて…腹筋が割れちゃうｶﾓ！？ </p>
+            <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">プレイヤー抱腹絶倒のショートショートシナリオ！こんなシナリオでこんなにウケることってある？笑いすぎて…腹筋が割れちゃうｶﾓ！？ </p>
 
           </div>
         </div>
@@ -373,67 +366,67 @@
 
 
 
-  <section class="text-gray-600 bg-contents2 body-font justify-center" id="2">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-contents2 body-font" id="2">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/sebata2.webp" type="image/webp"/>
-            <img src="image/trailer/sebata2.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/sebata2.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="mx-4 text-center md:inline-block hidden ">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block ">
             <div class="inline-flex">
-              <img src="image/icon/2.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/2.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
          <div class="mx-2 my-2 text-left">
-          <h1 class="sm:text-3xl text-2x1 font-serif italic text-book2">頼れるものは己の脚と相手だけ！<BR>トラックを駆け抜けろ！</h1>
+          <h1 class="font-serif italic sm:text-3xl text-2x1 text-book2">頼れるものは己の脚と相手だけ！<BR>トラックを駆け抜けろ！</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  mb-4 md:flex-row mt-4 lg:px-0 px-4">
-          <div class="sm:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
-              <p class="text-base member font-bold">せばた</p>
+              <p class="text-base font-bold member">せばた</p>
             </div> 
           </div>
 
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
  
             <!-- star rating -->
-            <ul class="list-t flex flex-row text-book">
-              <li class=" font-bold">プレイ人数</li>
+            <ul class="flex flex-row list-t text-book">
+              <li class="font-bold ">プレイ人数</li>
               <li class="ml-4">2人</li>
             </ul>
             <ul class="flex flex-row text-book">
               <!-- 2 -->
-              <li class=" font-bold">プレイ時間</li>
+              <li class="font-bold ">プレイ時間</li>
               <li class="ml-4">0.5時間～</li>
             </ul>
             <ul class="flex flex-row text-book">
-              <li class=" font-bold">タイプ</li>
+              <li class="font-bold ">タイプ</li>
               <li class="ml-4">クローズド/現代日本</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row mt-4 text-book">
-              <li class=" font-bold">推奨技能</li>
+            <ul class="mt-4 text-book">
+              <li class="font-bold ">推奨技能</li>
               <li class="ml-4">なし </li>
             </ul>
             <!-- star rating end -->
 
-              <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">「さあ始まりました！第856回二人三脚障害物競走のお時間です！」突然放り出されて二人三脚をやれだって～！？後ろから化け物も追いかけてくるし、私たち、どうなっちゃうの～！？</p>
+              <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">「さあ始まりました！第856回二人三脚障害物競走のお時間です！」突然放り出されて二人三脚をやれだって～！？後ろから化け物も追いかけてくるし、私たち、どうなっちゃうの～！？</p>
 
           </div>
         </div>
@@ -444,72 +437,72 @@
 
 
   
-  <section class="text-gray-600 bg-white body-font justify-center" id="3">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-white body-font" id="3">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/sebata3.webp" type="image/webp"/>
-            <img src="image/trailer/sebata3.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/sebata3.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="mx-4 text-center md:inline-block hidden">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block">
             <div class="inline-flex">
-              <img src="image/icon/3.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/3.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
-         <div class=" mx-2 my-2 text-left">
-          <h1 class="sm:text-3xl text-2x1 font-serif italic text-book2">一味違う座禅を体験してみませんか？</h1>
+         <div class="mx-2 my-2 text-left ">
+          <h1 class="font-serif italic sm:text-3xl text-2x1 text-book2">一味違う座禅を体験してみませんか？</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  mb-4 md:flex-row mt-4 lg:px-0 px-4">
-          <div class="sm:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
-              <p class="text-base member font-bold">せばた</p>
+              <p class="text-base font-bold member">せばた</p>
             </div> 
           </div>
 
 
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
  
                       <!-- star rating -->
-                      <ul class="list-t flex flex-row text-book">
-                        <li class=" font-bold">プレイ人数</li>
+                      <ul class="flex flex-row list-t text-book">
+                        <li class="font-bold ">プレイ人数</li>
                         <li class="ml-4">1人～</li>
                       </ul>
                       <ul class="flex flex-row text-book">
                         <!-- 2 -->
-                        <li class=" font-bold">プレイ時間</li>
+                        <li class="font-bold ">プレイ時間</li>
                         <li class="ml-4">0.5時間～</li>
                       </ul>
                       <ul class="flex flex-row text-book">
-                        <li class=" font-bold">タイプ</li>
+                        <li class="font-bold ">タイプ</li>
                         <li class="ml-4">クローズド/現代日本</li>
                         <!-- 2 -->
                       </ul>
-                      <ul class="flex flex-row mt-4 text-book">
-                        <li class=" font-bold">推奨技能</li>
+                      <ul class="mt-4 text-book">
+                        <li class="font-bold ">推奨技能</li>
                         <li class="ml-4">なし</li>
                       </ul>
-                      <ul class="flex flex-row text-book">
-                        <li class=" font-bold">備考</li>
+                      <ul class="text-book">
+                        <li class="font-bold ">備考</li>
                         <li class="ml-4">SAN回復を目的としたSAN回復シナリオ。</li>
                       </ul>
                       <!-- star rating end -->
           
-                      <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">ワクチンの副反応から生まれた問題作！知らないお寺…？怪しい住職…？「座禅を組まなきゃ帰れません」…絶対ホラーシナリオじゃねえじゃんこれ！お手軽SAN回復にピッタリ！ </p>
+                      <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">ワクチンの副反応から生まれた問題作！知らないお寺…？怪しい住職…？「座禅を組まなきゃ帰れません」…絶対ホラーシナリオじゃねえじゃんこれ！お手軽SAN回復にピッタリ！ </p>
           
           </div>
         </div>
@@ -520,36 +513,36 @@
 
 
   
-  <section class="text-gray-600 bg-contents2 body-font justify-center" id="4">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-contents2 body-font" id="4">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/koduki1.webp" type="image/webp"/>
-            <img src="image/trailer/koduki1.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/koduki1.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="mx-4 text-center md:inline-block hidden ">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block ">
             <div class="inline-flex">
-              <img src="image/icon/4.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/4.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
-         <div class=" mx-2 my-2 text-left">
-          <h1 class="sm:text-3xl text-2x1 font-serif italic text-book2">最強の探索者パワーで<BR>神話生物とチートバトル！</h1>
+         <div class="mx-2 my-2 text-left ">
+          <h1 class="font-serif italic sm:text-3xl text-2x1 text-book2">最強の探索者パワーで<BR>神話生物とチートバトル！</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  mb-4 md:flex-row mt-4 lg:px-0 px-4">
-          <div class="md:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
               <p class="text-base member">香月悠 (<a href="https://twitter.com/koduki_you">Twitter</a>/<a href="https://koduki-you-booth.booth.pm/">BOOTH</a>)</p>
@@ -557,34 +550,34 @@
           </div>
 
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
              
             <!-- star rating -->
-            <ul class="list-t flex flex-row text-book">
-              <li class=" font-bold">プレイ人数</li>
+            <ul class="flex flex-row list-t text-book">
+              <li class="font-bold ">プレイ人数</li>
               <li class="ml-4">1人～∞</li>
             </ul>
             <ul class="flex flex-row text-book">
               <!-- 2 -->
-              <li class=" font-bold">プレイ時間</li>
+              <li class="font-bold ">プレイ時間</li>
               <li class="ml-4">0.5時間～</li>
             </ul>
             <ul class="flex flex-row text-book">
-              <li class=" font-bold">タイプ</li>
+              <li class="font-bold ">タイプ</li>
               <li class="ml-4">コスモ/現代日本</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row mt-4 text-book">
-              <li class=" font-bold">推奨技能</li>
+            <ul class="mt-4 text-book">
+              <li class="font-bold ">推奨技能</li>
               <li class="ml-4">なし</li>
             </ul>
-            <ul class="flex flex-row text-book">
-              <li class=" font-bold">備考</li>
+            <ul class=" text-book">
+              <li class="font-bold ">備考</li>
               <li class="ml-4">SAN回復を目的としたSAN回復シナリオ。</li>
             </ul>
             <!-- star rating end -->
 
-            <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">チートをもらって異世界転生！見たことある化け物がいっぱいいるけど俺たちの敵じゃねえなあ！自陣で敵を薙ぎ払いながら爆笑SAN回復ができるゴキゲンシナリオ！</p>
+            <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">チートをもらって異世界転生！見たことある化け物がいっぱいいるけど俺たちの敵じゃねえなあ！自陣で敵を薙ぎ払いながら爆笑SAN回復ができるゴキゲンシナリオ！</p>
 
 
           </div>
@@ -596,36 +589,36 @@
 
 
 
-  <section class="text-gray-600 bg-white body-font justify-center" id="5">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-white body-font" id="5">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/koduki2.webp" type="image/webp"/>
-            <img src="image/trailer/koduki2.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/koduki2.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="mx-4 text-center md:inline-block hidden">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block">
             <div class="inline-flex">
-              <img src="image/icon/5.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/5.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
          <div class="mx-2 my-2 text-left">
-          <h1 class="sm:text-3xl text-2x1 font-serif italic text-book2">頭上できらめく、知らない世界のひとかけら。</h1>
+          <h1 class="font-serif italic sm:text-3xl text-2x1 text-book2">頭上できらめく、知らない世界のひとかけら。</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  mb-4 md:flex-row mt-4 lg:px-0 px-4">
-          <div class="md:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
               <p class="text-base member">香月悠 (<a href="https://twitter.com/koduki_you">Twitter</a>/<a href="https://koduki-you-booth.booth.pm/">BOOTH</a>)</p>
@@ -634,34 +627,34 @@
 
 
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
              
             <!-- star rating -->
-            <ul class="list-t flex flex-row text-book">
-              <li class=" font-bold">プレイ人数</li>
+            <ul class="flex flex-row list-t text-book">
+              <li class="font-bold ">プレイ人数</li>
               <li class="ml-4">1人～5人程度</li>
             </ul>
             <ul class="flex flex-row text-book">
               <!-- 2 -->
-              <li class=" font-bold">プレイ時間</li>
+              <li class="font-bold ">プレイ時間</li>
               <li class="ml-4">2～3時間</li>
             </ul>
             <ul class="flex flex-row text-book">
-              <li class=" font-bold">タイプ</li>
+              <li class="font-bold ">タイプ</li>
               <li class="ml-4">クローズド/現代日本</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row mt-4 text-book">
-              <li class=" font-bold">推奨技能</li>
+            <ul class="mt-4 text-book">
+              <li class="font-bold ">推奨技能</li>
               <li class="ml-4">《目星》《機械修理》《コンピューター》《電気修理》《電子工学》<BR>どれか一つあればよし/全員が持っている必要はないがあったほうが楽しい </li>
             </ul>
-            <ul class="flex flex-row text-book">
-              <li class=" font-bold">備考</li>
+            <ul class=" text-book">
+              <li class="font-bold ">備考</li>
               <li class="ml-4">工学系、不思議なものやオカルト好き、好奇心が旺盛なPCに特にオススメ</li>
             </ul>
             <!-- star rating end -->
 
-            <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">何億光年離れた惑星にも、コミュニケーションの取れる生命体がいるんだって。ちょっと話してみたいと思わない？異星間交流ができるかもしれない、未知の欠片を手に入れられるシナリオ。</p>
+            <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">何億光年離れた惑星にも、コミュニケーションの取れる生命体がいるんだって。ちょっと話してみたいと思わない？異星間交流ができるかもしれない、未知の欠片を手に入れられるシナリオ。</p>
 
 
           </div>
@@ -672,36 +665,36 @@
   </section>
 
 
-  <section class="text-gray-600 bg-contents2 body-font justify-center" id="6">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-contents2 body-font" id="6">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/miyaku.webp" type="image/webp"/>
-            <img src="image/trailer/miyaku.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/miyaku.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="mx-4 text-center md:inline-block hidden">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block">
             <div class="inline-flex">
-              <img src="image/icon/6.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/6.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
-         <div class=" mx-2 my-2 text-left">
-          <h1 class="sm:text-4xl text-3x1 font-serif italic text-book2">お……お前ら、入れ替わってる〜ッ!?</h1>
+         <div class="mx-2 my-2 text-left ">
+          <h1 class="font-serif italic sm:text-4xl text-3x1 text-book2">お……お前ら、入れ替わってる〜ッ!?</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  mb-4 md:flex-row mt-4 lg:px-0 px-4">
-          <div class="md:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
               <p class="text-base member">みやく (<a href="https://twitter.com/ohmiya93">Twitter</a>/<a href="https://ohmiya93.booth.pm/">BOOTH</a>)</p>
@@ -709,34 +702,34 @@
           </div>
 
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
              
             <!-- star rating -->
-            <ul class="list-t flex flex-row text-book">
-              <li class=" font-bold">プレイ人数</li>
+            <ul class="flex flex-row list-t text-book">
+              <li class="font-bold ">プレイ人数</li>
               <li class="ml-4">2人（+ KPC2人のダブルタイマン方式）</li>
             </ul>
             <ul class="flex flex-row text-book">
               <!-- 2 -->
-              <li class=" font-bold">プレイ時間</li>
+              <li class="font-bold ">プレイ時間</li>
               <li class="ml-4">3～4時間</li>
             </ul>
             <ul class="flex flex-row text-book">
-              <li class=" font-bold">タイプ</li>
+              <li class="font-bold ">タイプ</li>
               <li class="ml-4">シティ/現代日本</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row mt-4 text-book">
-              <li class=" font-bold">推奨技能</li>
+            <ul class="mt-4 text-book">
+              <li class="font-bold ">推奨技能</li>
               <li class="ml-4">なし</li>
             </ul>
-            <ul class="flex flex-row text-book">
-              <li class=" font-bold">備考</li>
+            <ul class=" text-book">
+              <li class="font-bold ">備考</li>
               <li class="ml-4">KPCと友人以上の仲の探索者。<BR>『PC1×KPC1』&amp;『PC2×KPC2』で行うダブルタイマンシナリオ</li>
             </ul>
             <!-- star rating end -->
 
-            <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">ねえねえ、東京観光しながらスタンプラリーで遊べるアプリがあるらしいよ！よければ、僕と一緒に…えっ！？誰だお前！？昨日までのあの子は、あの子じゃないかもしれない…？</p>
+            <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">ねえねえ、東京観光しながらスタンプラリーで遊べるアプリがあるらしいよ！よければ、僕と一緒に…えっ！？誰だお前！？昨日までのあの子は、あの子じゃないかもしれない…？</p>
 
 
           </div>
@@ -748,36 +741,36 @@
 
 
 
-  <section class="text-gray-600 bg-white body-font justify-center" id="7">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-white body-font" id="7">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/beta.webp" type="image/webp"/>
-            <img src="image/trailer/beta.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/beta.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="mx-4 text-center md:inline-block hidden">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block">
             <div class="inline-flex">
-              <img src="image/icon/7.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/7.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
-         <div class=" mx-2 my-2 text-left">
-          <h1 class="sm:text-4xl text-3x1 font-serif italic text-book2">いつか大人になる、私は何者だ？</h1>
+         <div class="mx-2 my-2 text-left ">
+          <h1 class="font-serif italic sm:text-4xl text-3x1 text-book2">いつか大人になる、私は何者だ？</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  mb-4 md:flex-row mt-4 lg:px-0 px-4">
-          <div class="md:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
               <p class="text-base member">ベータ (<a href="https://twitter.com/beta_trpg">Twitter</a>)</p>
@@ -785,34 +778,34 @@
           </div>
 
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
              
             <!-- star rating -->
-            <ul class="list-t flex flex-row text-book">
-              <li class=" font-bold">プレイ人数</li>
+            <ul class="flex flex-row list-t text-book">
+              <li class="font-bold ">プレイ人数</li>
               <li class="ml-4">1～4人（+ KPC）</li>
             </ul>
             <ul class="flex flex-row text-book">
               <!-- 2 -->
-              <li class=" font-bold">プレイ時間</li>
+              <li class="font-bold ">プレイ時間</li>
               <li class="ml-4">4～6時間</li>
             </ul>
             <ul class="flex flex-row text-book">
-              <li class=" font-bold">タイプ</li>
+              <li class="font-bold ">タイプ</li>
               <li class="ml-4">シティ/現代日本</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row mt-4 text-book">
-              <li class=" font-bold">推奨技能</li>
+            <ul class="mt-4 text-book">
+              <li class="font-bold ">推奨技能</li>
               <li class="ml-4">《目星》</li>
             </ul>
-            <ul class="flex flex-row text-book">
-              <li class=" font-bold">備考</li>
+            <ul class=" text-book">
+              <li class="font-bold ">備考</li>
               <li class="ml-4">高校生探索者限定<BR>改変によって、教師など学校関係者による参加可能</li>
             </ul>
             <!-- star rating end -->
 
-            <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">夕焼けの空が、大人になったあの子の横顔を照らした。私たちの10年後も、君みたいに立派な大人でいられてるのかな？時空を超えて、KPCへ会いに行くシティシナリオ。</p>
+            <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">夕焼けの空が、大人になったあの子の横顔を照らした。私たちの10年後も、君みたいに立派な大人でいられてるのかな？時空を超えて、KPCへ会いに行くシティシナリオ。</p>
 
 
           </div>
@@ -824,36 +817,36 @@
 
 
   
-  <section class="text-gray-600 bg-contents2 body-font justify-center" id="8">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-contents2 body-font" id="8">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/hoshino.webp" type="image/webp"/>
-            <img src="image/trailer/hoshino.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/hoshino.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="mx-4 text-center md:inline-block hidden">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block">
             <div class="inline-flex">
-              <img src="image/icon/8.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/8.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
          <div class="mx-2 my-2 text-left">
-          <h1 class="sm:text-4xl text-3x1 font-serif italic text-book2">探索者よ、走れ。どこまでも。</h1>
+          <h1 class="font-serif italic sm:text-4xl text-3x1 text-book2">探索者よ、走れ。どこまでも。</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  mb-4 md:flex-row mt-4 lg:px-0 px-4">
-          <div class="md:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
               <p class="text-base member">星野 (<a href="https://twitter.com/star_clans">Twitter</a>)</p>
@@ -861,39 +854,39 @@
           </div>
 
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
              
             <!-- star rating -->
-            <ul class="list-t flex flex-row text-book">
-              <li class=" font-bold">プレイ人数</li>
+            <ul class="flex flex-row list-t text-book">
+              <li class="font-bold ">プレイ人数</li>
               <li class="ml-4">1～4人</li>
             </ul>
             <ul class="flex flex-row text-book">
               <!-- 2 -->
-              <li class=" font-bold">プレイ時間</li>
+              <li class="font-bold ">プレイ時間</li>
               <li class="ml-4">3～5時間</li>
             </ul>
             <ul class="flex flex-row text-book">
-              <li class=" font-bold">タイプ</li>
+              <li class="font-bold ">タイプ</li>
               <li class="ml-4">シティ/ドリームランド</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row mt-4 text-book">
-              <li class=" font-bold">推奨技能</li>
+            <ul class="mt-4 text-book">
+              <li class="font-bold ">推奨技能</li>
               <li class="ml-4">《目星》《運転(自動車)》</li>
             </ul>
             <!-- <ul class="flex flex-row mt-4 text-book">
-              <li class=" font-bold">準推奨技能</li>
+              <li class="font-bold ">準推奨技能</li>
               <li class="ml-4">《ナビゲート》《機械修理》《投擲》《応急手当》</li>
             </ul> -->
-            <ul class="flex flex-row text-book">
-              <li class=" font-bold">備考</li>
+            <ul class=" text-book">
+              <li class="font-bold ">備考</li>
               <li class="ml-4">探索者のうち一人は運転免許を持っていること。<BR>しかし《運転(自動車)》が高くなくともシナリオ内で調整可能</li>
             </ul>
             <!-- star rating end -->
 
 
-            <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">俺たち特攻野郎Ａチーム！相棒はこのイカした車！目的地は不明！だけど俺たちヘコたれないぜ！だから…早く帰してくれませんか～？！</p>
+            <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">俺たち特攻野郎Ａチーム！相棒はこのイカした車！目的地は不明！だけど俺たちヘコたれないぜ！だから…早く帰してくれませんか～？！</p>
 
           </div>
         </div>
@@ -904,36 +897,36 @@
 
 
   
-  <section class="text-gray-600 bg-white body-font justify-center" id="9">
-    <div class="container h-full  px-2 py-6 md:py-12 pb-8 mx-auto flex flex-col justify-center  ">
+  <section class="justify-center text-gray-600 bg-white body-font" id="9">
+    <div class="container flex flex-col justify-center h-full px-2 py-6 pb-8 mx-auto md:py-12 ">
 
-      <div class="lg:w-3/4 w-full mx-auto">
+      <div class="w-full mx-auto lg:w-3/4">
 
-        <div class="rounded-lg overflow-hidden">
+        <div class="overflow-hidden rounded-lg">
           <!-- trailer webp -->
-          <picture class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12">
+          <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
             <source srcset="image/trailer/tatsuhara.webp" type="image/webp"/>
-            <img src="image/trailer/tatsuhara.png"  class="rounded-md object-contain container object-top lg:w-2/3 md:w-3/4 w-11/12" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+            <img src="image/trailer/tatsuhara.png"  class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" /><!-- ブラウザがwebpに対応していない場合に表示 -->
           </picture>
           <!-- trailer webp end -->
           </div>
 
-        <div class="w-full justify-center  items-center flex flex-row sm:mt-6 mt-4 mb-2">
-          <div class="mx-4 text-center md:inline-block hidden">
+        <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
+          <div class="hidden mx-4 text-center md:inline-block">
             <div class="inline-flex">
-              <img src="image/icon/9.png" alt="image" class="icon2 p-2 rounded-full bg-book2"> 
+              <img src="image/icon/9.png" alt="image" class="p-2 rounded-full icon2 bg-book2"> 
             </div> 
           </div>
-         <div class=" mx-2 my-2 text-left">
-          <h1 class="sm:text-3xl text-2x1 font-serif italic text-book2">オーロラを越えて、<BR>僕らはサンタに会いに行く。</h1>
+         <div class="mx-2 my-2 text-left ">
+          <h1 class="font-serif italic sm:text-3xl text-2x1 text-book2">オーロラを越えて、<BR>僕らはサンタに会いに行く。</h1>
           </div>
         </div>
 
         <!-- text&icon -->
-        <div class="container w-full justify-center md:flex  md:flex-row mt-4 mb-4 lg:px-0 px-4">
-          <div class="md:w-1/2 w-full text-center py-0 ">
+        <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
+          <div class="w-full py-0 text-center md:w-1/3 ">
             <div class="inline-flex items-center justify-center ">
-              <img src="image/chart/sample.png" alt="image" class="p-2 sm:w-full w-2/3">
+              <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
             </div>
             <div class="text-center ">
               <p class="text-base member">竜原 (<a href="https://twitter.com/tthrpg">Twitter</a>/<a href="https://tatuhara.booth.pm/">BOOTH</a>)</p>
@@ -942,34 +935,34 @@
 
   
 
-         <div class="mx-auto sm:pl-2 px-4 pt-2 text-book text-left text-sm sm:text-base">
+         <div class="w-full px-4 pt-2 text-sm text-left md:w-1/2 sm:pl-2 text-book sm:text-base">
              
             <!-- star rating -->
-            <ul class="list-t flex flex-row ">
-              <li class=" font-bold">プレイ人数</li>
+            <ul class="flex flex-row list-t ">
+              <li class="font-bold ">プレイ人数</li>
               <li class="ml-4">1～4人（タイマン可）</li>
             </ul>
             <ul class="flex flex-row ">
               <!-- 2 -->
-              <li class=" font-bold">プレイ時間</li>
+              <li class="font-bold ">プレイ時間</li>
               <li class="ml-4">5～6時間</li>
             </ul>
             <ul class="flex flex-row ">
-              <li class=" font-bold">タイプ</li>
+              <li class="font-bold ">タイプ</li>
               <li class="ml-4">シティ/？？？</li>
               <!-- 2 -->
             </ul>
-            <ul class="flex flex-row mt-4 ">
-              <li class=" font-bold">推奨技能</li>
+            <ul class="mt-4 ">
+              <li class="font-bold ">推奨技能</li>
               <li class="ml-4">《目星》</li>
             </ul>
-            <ul class="flex flex-row ">
-              <li class=" font-bold">備考</li>
+            <ul class="">
+              <li class="font-bold ">備考</li>
               <li class="ml-4">探索者同士の関係は、知り合いを推奨。オールシーズン対応<BR>ロスト探索者、ドリームランド探索者の参加は改変次第で可能</li>
             </ul>
             <!-- star rating end -->
 
-            <p class="leading-relaxed md:text-lg text-md mb-4 mt-4">子供の姿になってしまった探索者を乗せた不思議な蒸気機関車はオーロラを越えてクリスマスシティへ。そこには最高の大冒険が待ち受けていた。大人に”なってしまった”探索者に贈る異世界シナリオ。</p>
+            <p class="mt-4 mb-4 leading-relaxed md:text-lg text-md">子供の姿になってしまった探索者を乗せた不思議な蒸気機関車はオーロラを越えてクリスマスシティへ。そこには最高の大冒険が待ち受けていた。大人に”なってしまった”探索者に贈る異世界シナリオ。</p>
 
 
           </div>
@@ -985,97 +978,97 @@
 
 
   <!-- parallex -->
-  <section class="homescreen flex items-center justify-center w-full h-36 m-auto  bg-book2 "></section>
+  <section class="flex items-center justify-center w-full m-auto homescreen h-36 bg-book2 "></section>
 
 
 
 
 <!-- team -->
-<section class=" body-font bg-logo-circle bg-book text-white"  >
+<section class="text-white body-font bg-logo-circle bg-book"  >
     <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="text-4xl font-medium title-font mb-4 ">Scenario List</h1>
-       <!-- <p class="lg:w-1/2 mx-auto leading-relaxed text-base">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.</p> --> 
+      <div class="flex flex-col w-full mb-20 text-center">
+        <h1 class="mb-4 text-4xl font-medium title-font ">Scenario List</h1>
+       <!-- <p class="mx-auto text-base leading-relaxed lg:w-1/2">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.</p> --> 
       </div>
       <div class="flex flex-wrap -m-2 ">
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
-          <div class="h-full flex items-center  p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/1.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2 ">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/1.png">
             <div class="flex-grow">
-              <h2 class=" title-font font-medium">Give me MUSCLE!</h2>
+              <h2 class="font-medium title-font">Give me MUSCLE!</h2>
               <p class="text-gray-500">せばた</p>
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center  p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/2.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/2.png">
             <div class="flex-grow">
-              <h2 class="title-font font-medium">探索者対抗!!二人三脚障害物レース</h2>
+              <h2 class="font-medium title-font">探索者対抗!!二人三脚障害物レース</h2>
               <p class="text-gray-500">せばた</p>
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center  p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/3.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/3.png">
             <div class="flex-grow">
-              <h2 class=" title-font font-medium">座禅 -THE ZEN-</h2>
+              <h2 class="font-medium title-font">座禅 -THE ZEN-</h2>
               <p class="text-gray-500">せばた</p>
             </div>
           </div>
         </div>
 
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center  p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/4.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/4.png">
             <div class="flex-grow">
-              <h2 class=" title-font font-medium">探索者が神話生物相手に無双するようですよ？</h2>
+              <h2 class="font-medium title-font">探索者が神話生物相手に無双するようですよ？</h2>
               <p class="text-gray-500">香月悠</p>
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/5.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/5.png">
             <div class="flex-grow">
-              <h2 class=" title-font font-medium">彼方より来たるディアスティマ</h2>
+              <h2 class="font-medium title-font">彼方より来たるディアスティマ</h2>
               <p class="text-gray-500">香月悠</p>
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center  p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/6.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/6.png">
             <div class="flex-grow">
-              <h2 class=" title-font font-medium">東京チアフルコラボ</h2>
+              <h2 class="font-medium title-font">東京チアフルコラボ</h2>
               <p class="text-gray-500">みやく</p>
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center  p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/7.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/7.png">
             <div class="flex-grow">
-              <h2 class=" title-font font-medium">誰そ彼タイムカプセル</h2>
+              <h2 class="font-medium title-font">誰そ彼タイムカプセル</h2>
               <p class="text-gray-500">ベータ</p>
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center  p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/8.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/8.png">
             <div class="flex-grow">
-              <h2 class=" title-font font-medium">道連れラリーレイド</h2>
+              <h2 class="font-medium title-font">道連れラリーレイド</h2>
               <p class="text-gray-500">星野</p>
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center  p-4 Slist-border border rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-book object-cover object-center flex-shrink-0 rounded-full mr-4" src="image/icon/9.png">
+        <div class="w-full p-2 lg:w-1/3 md:w-1/2">
+          <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book" src="image/icon/9.png">
             <div class="flex-grow">
-              <h2 class=" title-font font-medium">夢見るホーリーキャロル</h2>
+              <h2 class="font-medium title-font">夢見るホーリーキャロル</h2>
               <p class="text-gray-500">竜原</p>
             </div>
           </div>
@@ -1091,17 +1084,17 @@
 <!-- footer -->
 
 <!-- This is an example component -->
-<section class=" bg-book ">
-  <div class="max-w-4xl mx-auto text-white py-10 px-6">
-      <div class="text-center text-medium md:text-sm text-xs">
+<section class=" bg-book">
+  <div class="max-w-4xl px-6 py-10 mx-auto text-white">
+      <div class="text-xs text-center text-medium md:text-sm">
           <p> 本作は、「 株式会社アークライト  」及び「株式会社KADOKAWA」が権利を有する『クトゥルフ神話TRPG』の二次創作物です。</p>
           <p>Call of Cthulhu is copyright ©1981, 2015, 2019 by Chaosium Inc. ;all rights reserved. Arranged by Arclight Inc.</p> 
           <p>Call of Cthulhu is a registered trademark of Chaosium Inc.</p> 
           <p>PUBLISHED BY KADOKAWA CORPORATION　「クトゥルフ神話TRPG」「新クトゥルフ神話TRPG ルールブック」 </p>
   
       </div>
-      <div class="mt-14 flex flex-col w-full md:flex-row md:justify-center items-center" >
-        <a class="flex title-font font-medium items-center md:justify-start justify-center" href="#">
+      <div class="flex flex-col items-center w-full mt-14 md:flex-row md:justify-center" >
+        <a class="flex items-center justify-center font-medium title-font md:justify-start" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle"  viewBox="0 0 173.81 164.24"><rect class="cls-12" x="4.94" y="3.82" width="14.34" height="43.02"/><polyline class="cls-12" points="25.01 3.82 47.95 3.82 32.66 20.02 46.04 20.02 30.75 36.33 46.04 34.72"/><polyline class="cls-12" points="55.6 3.82 82.37 3.82 70.89 43.97"/><line class="cls-12" x1="68.98" y1="3.82" x2="51.78" y2="46.04"/><line class="cls-12" x1="2.07" y1="55.44" x2="80.45" y2="55.44"/><line class="cls-12" x1="34.57" y1="55.44" x2="2.07" y2="103.24"/><line class="cls-12" x1="49.86" y1="55.44" x2="80.45" y2="103.24"/><line class="cls-12" x1="88.1" y1="9.56" x2="172.22" y2="9.56"/><line class="cls-12" x1="112.96" x2="112.96" y2="22.94"/><line class="cls-12" x1="147.37" x2="147.37" y2="22.94"/><polyline class="cls-12" points="88.1 51.62 130.16 17.21 172.22 51.62"/><line class="cls-12" x1="99.57" y1="55.44" x2="158.84" y2="55.44"/><circle class="cls-12" cx="158.36" cy="79.82" r="10.04"/><circle class="cls-12" cx="99.09" cy="79.82" r="10.04"/><circle class="cls-12" cx="41.74" cy="79.82" r="10.04"/><polyline class="cls-12" points="15.45 131.92 67.07 131.92 67.07 97.51 15.45 97.51 15.45 160.6 40.3 151.04"/><line class="cls-12" x1="21.19" y1="114.71" x2="61.34" y2="114.71"/><line class="cls-12" x1="40.78" y1="138.61" x2="77.35" y2="161.79"/><polyline class="cls-12" points="90.01 122.36 90.01 97.51 168.4 97.51 168.4 122.36"/><rect class="cls-12" x="105.31" y="110.89" width="45.88" height="19.12"/><line class="cls-12" x1="95.75" y1="145.3" x2="162.66" y2="145.3"/><line class="cls-12" x1="128.25" y1="135.74" x2="128.25" y2="160.6"/><line class="cls-12" x1="90.01" y1="160.6" x2="168.4" y2="160.6"/><line class="cls-12" x1="41.26" y1="44.93" x2="41.26" y2="54.49"/><line class="cls-12" x1="129.21" y1="29.63" x2="129.21" y2="86.99"/><line class="cls-12" x1="62.29" y1="151.04" x2="79.5" y2="143.39"/></svg>
         </a>
       </div>
@@ -1113,7 +1106,7 @@
 <!-- footer end -->
 
 
-<p id="page-top"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+<p id="page-top"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
   <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
 </svg></a></p>
 
@@ -1131,7 +1124,7 @@
 <script>
     for (var i = 0; i < 100; i++) {
       var star =
-        '<div class="star m-0 z-0" style="animation: twinkle ' +
+        '<div class="z-0 m-0 star" style="animation: twinkle ' +
         (Math.random() * 4 + 4) +
         's linear ' +
         (Math.random() * 1 + 1) +
