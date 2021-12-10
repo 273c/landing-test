@@ -617,10 +617,6 @@ b, strong, .bold{
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif;
 }
 
-.font-serif{
-  font-family: 'Shippori Mincho', serif;
-}
-
 .container{
   width: 100%;
   margin-right: auto;
@@ -33732,6 +33728,10 @@ b, strong, .bold{
 
 .content-none{
   content: none;
+}
+
+@layer .font-serif{
+  font-family: 'Shippori Mincho', serif;
 }
 
 /* ----お手軽コマンドなり～--------------------------------------- */
