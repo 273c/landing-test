@@ -34019,6 +34019,15 @@ b, strong, .bold{
   }
 }
 
+.icon_anim img{
+  transition-duration: 0.5s;
+}
+
+.icon_anim:hover img{
+  transform: rotateY( 360deg );
+  transition-duration: 0.5s;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -194443,6 +194452,3 @@ b, strong, .bold{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
-
-
