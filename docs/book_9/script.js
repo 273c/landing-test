@@ -10,7 +10,6 @@ function PageTopAnime() {
 		}
 	}
 }
-
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
 	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
@@ -31,66 +30,45 @@ $('#page-top a').click(function () {
 
 $('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
 	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
-	var pos = $(elmHash).offset().top-30;	//idの上部の距離を取得
-	$('body,html').animate({scrollTop: pos}, 800); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+	var pos = $(elmHash).offset().top-0;	//idの上部の距離を取得
+	$('body,html').animate({scrollTop: pos}, 900); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
 	return false;
 });
 
 
+
+
 // スクロールするとロゴの色変更
-$(function () {
-	$(window).on("scroll", function () {
-	  const sliderHeight = $("#1").height();
-	  if (sliderHeight - 80 < $(this).scrollTop()) {
-		$(".cls-1").addClass("change-color");
-		$(".logo-circle2").addClass("change-color");
-        $(".hum").addClass("change-color");
-	  } else {
-		$(".cls-1").removeClass("change-color");
-		$(".logo-circle2").addClass("change-color");
-        $(".hum").addClass("change-color");
-	  }
-	});
-  });
 
 
-// Burger menus
-document.addEventListener('DOMContentLoaded', function() {
-    // open
-    const burger = document.querySelectorAll('.navbar-burger');
-    const menu = document.querySelectorAll('.navbar-menu');
 
-    if (burger.length && menu.length) {
-        for (var i = 0; i < burger.length; i++) {
-            burger[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
+jQuery(window).scroll(function() {
+        let scrollTop = jQuery(window).scrollTop(); // スクロール上部の位置
+        let areaTop = jQuery("main").offset().top; // 対象エリアの上部の位置
+        let areaBottom = areaTop + jQuery("main").innerHeight(); // 対象エリアの下部の位置
+    
+        if (scrollTop > areaTop && scrollTop < areaBottom) {
+            jQuery(".cls-1").addClass("change-color");
+            jQuery(".logo-circle2").addClass("change-color");
+            jQuery("#burger").removeClass("bg-white");
+            jQuery("#burger").addClass("bg-book");
+        } else {
+            $(".cls-1").removeClass("change-color");
+            $(".logo-circle2").removeClass("change-color");
+            jQuery("#burger").removeClass("bg-book");
+            jQuery("#burger").addClass("bg-white");
         }
-    }
+    });
 
-    // close
-    const close = document.querySelectorAll('.navbar-close');
-    const backdrop = document.querySelectorAll('.navbar-backdrop');
+// ナビゲーション
 
-    if (close.length) {
-        for (var i = 0; i < close.length; i++) {
-            close[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
+// grab everything we need
+const btn = document.querySelector(".mobile-menu-button");
+const sidebar = document.querySelector(".sidebar");
 
-    if (backdrop.length) {
-        for (var i = 0; i < backdrop.length; i++) {
-            backdrop[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
+// add our event listener for the click
+btn.addEventListener("click", () => {
+    sidebar.classList.toggle("translate-x-full");
+    btn.classList.toggle("tham-active");
 });
+

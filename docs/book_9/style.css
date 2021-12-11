@@ -33738,95 +33738,6 @@ b, strong, .bold{
 
 /* ------------------------------------------------------------ */
 
-@media (min-width: 1024px) {
-  .top-navbar {
-    display: inline-flex !important;
-  }
-}
-
-#header{
-  position: fixed;
-  /*fixedを設定して固定*/
-  z-index: 999;
-  /*最前面へ*/
-  /*以下はレイアウトのためのCSS*/
-  display: flex;
-  color:#fff;
-}
-
-.navbar-menu{
-  transition: all 1s;
-  -webkit-overflow-scrolling: touch;
-}
-
-/*==ふわっと出現させるためのCSS*/
-
-/*　上に上がる動き　*/
-
-#header.UpMove{
-  position: fixed;
-  display: none;
-  -webkit-animation: UpAnime 0.5s forwards;
-          animation: UpAnime 0.5s forwards;
-}
-
-@-webkit-keyframes UpAnime{
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-}
-
-@keyframes UpAnime{
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-}
-
-/*　下に下がる動き　*/
-
-#header.DownMove{
-  position: fixed;
-  display: flex;
-  -webkit-animation: DownAnime 0.5s forwards;
-          animation: DownAnime 0.5s forwards;
-}
-
-@-webkit-keyframes DownAnime{
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes DownAnime{
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Scenario icon */
 
 .icon{
@@ -33846,8 +33757,11 @@ b, strong, .bold{
 
 .bg-navibar{
   background-image: url("image/bg_rp.png");
+  background-color: #595d79;
   background-attachment: fixed;
   background-repeat: repeat;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Scenario list --------------------------------------------- */
@@ -33893,11 +33807,11 @@ b, strong, .bold{
 
 .logo-circle2{
   /* navibar */
-  width:70px;
+  width:50px;
   padding: 5px;
   background: transparent;
   border-radius: 2px;
-  border-color:white;
+  border-color: #ffffff;
   border-style: solid;
   border-width: 1px;
 }
@@ -33911,7 +33825,7 @@ b, strong, .bold{
 }
 
 .logo-circle2.change-color{
-  width:70px;
+  width:50px;
   padding: 5px;
   background: transparent;
   border-radius: 2px;
@@ -33919,6 +33833,17 @@ b, strong, .bold{
   border-style: solid;
   border-width: 1px;
   transition: color 0.4s ease-out;
+}
+
+@media (min-width: 768px) {
+  .logo-circle2{
+    /* navibar */
+    width:70px;
+  }
+
+  .logo-circle2.change-color{
+    width:70px;
+  }
 }
 
 /* scenario list bg */
@@ -33929,22 +33854,6 @@ b, strong, .bold{
   background-repeat: no-repeat;
   background-position: bottom 0px right -70px;
   opacity: 1;
-}
-
-.hum{
-  fill:white;
-  stroke:white;
-  stroke-miterlimit:10;
-  stroke-width:1px;
-  transition: color 0.4s ease-out;
-}
-
-.hum.change-color{
-  fill:#595d79;
-  stroke:#595d79;
-  stroke-miterlimit:10;
-  stroke-width:1px;
-  transition: color 0.4s ease-out;
 }
 
 /* 継続限トップ背景 */
@@ -34008,60 +33917,6 @@ b, strong, .bold{
   }
 }
 
-/* 継続限　トップアイコンリンクアニメーション */
-
-.btnripple{
-  position: relative;
-  /*リンクの形状*/
-  display:inline-block;
-  text-decoration: none;
-  outline: none;
-}
-
-/*波形の設定*/
-
-.btnripple:hover::before {
-  content: '';
-  /*絶対配置で波形の位置を決める*/
-  position: absolute;
-  left:25%;
-  top:25%;
-  /*波形の形状*/
-  border: 1px solid #ffffff;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  /*はじめは不透明*/
-  opacity:1;
-  /*アニメーションの設定*/
-  -webkit-animation:1.5s ripple forwards;
-          animation:1.5s ripple forwards;
-}
-
-/*波形が広がるアニメーション*/
-
-@-webkit-keyframes ripple{
-  0%{
-    transform: scale(0);
-  }
-
-  100%{
-    transform:scale(2);
-    opacity: 0;
-  }
-}
-
-@keyframes ripple{
-  0%{
-    transform: scale(0);
-  }
-
-  100%{
-    transform:scale(2);
-    opacity: 0;
-  }
-}
-
 /* Page top --------------------------------------------- */
 
 #page-top a{
@@ -34109,6 +33964,18 @@ b, strong, .bold{
           animation: UpAnime 0.5s forwards;
 }
 
+@-webkit-keyframes UpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes UpAnime{
   from {
     opacity: 0;
@@ -34126,6 +33993,18 @@ b, strong, .bold{
 #page-top.DownMove{
   -webkit-animation: DownAnime 0.5s forwards;
           animation: DownAnime 0.5s forwards;
+}
+
+@-webkit-keyframes DownAnime{
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
 }
 
 @keyframes DownAnime{
