@@ -893,10 +893,6 @@ b, strong{
   margin-bottom: 2.5rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .mb-20{
   margin-bottom: 5rem;
 }
@@ -1214,11 +1210,6 @@ b, strong{
 .bg-book2{
   --tw-bg-opacity: 1;
   background-color: rgba(89, 93, 121, var(--tw-bg-opacity));
-}
-
-.bg-book4{
-  --tw-bg-opacity: 1;
-  background-color: rgba(190, 157, 109, var(--tw-bg-opacity));
 }
 
 .hover\:bg-book3:hover{
@@ -1868,14 +1859,6 @@ b, strong{
 
   .md\:flex-row{
     flex-direction: row;
-  }
-
-  .md\:justify-start{
-    justify-content: flex-start;
-  }
-
-  .md\:justify-center{
-    justify-content: center;
   }
 
   .md\:px-8{
