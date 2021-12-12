@@ -743,10 +743,6 @@ b, strong{
   bottom: -8px;
 }
 
-.invisible{
-  visibility: hidden;
-}
-
 .fixed{
   position: fixed;
 }
@@ -796,10 +792,6 @@ b, strong{
   z-index: 10;
 }
 
-.z-20{
-  z-index: 20;
-}
-
 .z-50{
   z-index: 50;
 }
@@ -843,11 +835,6 @@ b, strong{
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .mt-0{
@@ -894,16 +881,20 @@ b, strong{
   margin-bottom: 1rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
 
 .mb-12{
   margin-bottom: 3rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
 }
 
 .mb-20{
@@ -954,10 +945,6 @@ b, strong{
   height: 4rem;
 }
 
-.h-28{
-  height: 7rem;
-}
-
 .h-36{
   height: 9rem;
 }
@@ -988,6 +975,10 @@ b, strong{
 
 .w-4\/5{
   width: 80%;
+}
+
+.w-5\/6{
+  width: 83.333333%;
 }
 
 .w-11\/12{
@@ -1102,6 +1093,10 @@ b, strong{
           user-select: none;
 }
 
+.resize{
+  resize: both;
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1116,10 +1111,6 @@ b, strong{
 
 .flex-wrap{
   flex-wrap: wrap;
-}
-
-.items-start{
-  align-items: flex-start;
 }
 
 .items-center{
@@ -1225,6 +1216,11 @@ b, strong{
   background-color: rgba(89, 93, 121, var(--tw-bg-opacity));
 }
 
+.bg-book4{
+  --tw-bg-opacity: 1;
+  background-color: rgba(190, 157, 109, var(--tw-bg-opacity));
+}
+
 .hover\:bg-book3:hover{
   --tw-bg-opacity: 1;
   background-color: rgba(192, 194, 205, var(--tw-bg-opacity));
@@ -1317,6 +1313,11 @@ b, strong{
   padding-bottom: 2.5rem;
 }
 
+.py-11{
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1328,10 +1329,6 @@ b, strong{
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-24{
-  padding-top: 6rem;
 }
 
 .pb-8{
@@ -1533,6 +1530,15 @@ b, strong{
   width:100px;
 }
 
+.icon_anim img{
+  transition-duration: 0.5s;
+}
+
+.icon_anim:hover img{
+  transform: rotateY( 360deg );
+  transition-duration: 0.5s;
+}
+
 /* Scenario contents ------------------------------------------ */
 
 .bg-contents2{
@@ -1600,32 +1606,9 @@ b, strong{
   border-width: 1px;
 }
 
-.cls-1.change-color{
-  fill:none;
-  stroke:#595d79;
-  stroke-miterlimit:10;
-  stroke-width:4px;
-  transition: color 0.4s ease-out;
-}
-
-.logo-circle2.change-color{
-  width:50px;
-  padding: 5px;
-  background: transparent;
-  border-radius: 2px;
-  border-color:#595d79;
-  border-style: solid;
-  border-width: 1px;
-  transition: color 0.4s ease-out;
-}
-
 @media (min-width: 768px) {
   .logo-circle2{
     /* navibar */
-    width:70px;
-  }
-
-  .logo-circle2.change-color{
     width:70px;
   }
 }
@@ -1803,18 +1786,13 @@ b, strong{
   }
 }
 
-.icon_anim img{
-  transition-duration: 0.5s;
-}
-
-.icon_anim:hover img{
-  transform: rotateY( 360deg );
-  transition-duration: 0.5s;
-}
-
 @media (min-width: 640px){
   .sm\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .sm\:mt-8{
+    margin-top: 2rem;
   }
 
   .sm\:-mt-8{
@@ -1827,6 +1805,10 @@ b, strong{
 
   .sm\:w-full{
     width: 100%;
+  }
+
+  .sm\:justify-center{
+    justify-content: center;
   }
 
   .sm\:px-3{
@@ -1918,10 +1900,6 @@ b, strong{
 }
 
 @media (min-width: 1024px){
-  .lg\:visible{
-    visibility: visible;
-  }
-
   .lg\:mx-6{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -1956,10 +1934,6 @@ b, strong{
     display: none;
   }
 
-  .lg\:h-screen{
-    height: 100vh;
-  }
-
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -1978,10 +1952,6 @@ b, strong{
 
   .lg\:w-2\/6{
     width: 33.333333%;
-  }
-
-  .lg\:w-3\/6{
-    width: 50%;
   }
 
   .lg\:grid-cols-4{

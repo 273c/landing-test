@@ -44,17 +44,12 @@ $('#page-link a[href*="#"]').click(function () {//全てのページ内リンク
 
 jQuery(window).scroll(function() {
         let scrollTop = jQuery(window).scrollTop(); // スクロール上部の位置
-        let areaTop = jQuery("main").offset().top; // 対象エリアの上部の位置
+        let areaTop = jQuery("main").offset().top ; // 対象エリアの上部の位置
         let areaBottom = areaTop + jQuery("main").innerHeight(); // 対象エリアの下部の位置
-    
         if (scrollTop > areaTop && scrollTop < areaBottom) {
-            jQuery(".cls-1").addClass("change-color");
-            jQuery(".logo-circle2").addClass("change-color");
             jQuery("#burger").removeClass("bg-white");
             jQuery("#burger").addClass("bg-book");
         } else {
-            $(".cls-1").removeClass("change-color");
-            $(".logo-circle2").removeClass("change-color");
             jQuery("#burger").removeClass("bg-book");
             jQuery("#burger").addClass("bg-white");
         }
