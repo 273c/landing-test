@@ -1837,6 +1837,12 @@ b, strong{
   }
 }
 
+svg {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
 @media (min-width: 640px) {
   .sm\:mt-6 {
     margin-top: 1.5rem;
@@ -2041,4 +2047,3 @@ b, strong{
 
 @media (min-width: 1536px) {
 }
-
