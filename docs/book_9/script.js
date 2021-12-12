@@ -105,4 +105,3 @@ $('#page-top a').click(function () {
     return false;//リンク自体の無効化
 });
 
-$(".lazyload").lazyload();
