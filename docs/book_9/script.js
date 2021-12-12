@@ -72,3 +72,7 @@ btn.addEventListener("click", () => {
     btn.classList.toggle("tham-active");
 });
 
+$('.nav-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
+    sidebar.classList.toggle("translate-x-full");
+    btn.classList.toggle("tham-active");
+});
