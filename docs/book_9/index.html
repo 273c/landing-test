@@ -34,6 +34,35 @@
   <link rel="manifest" href="../site.webmanifest">
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
+<script src="scroll.js" charset="utf-8" defer></script>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css"  media="print" onload="this.media='all'">
+
+
+
+<script>
+  for (var i = 0; i < 100; i++) {
+    var star =
+      '<div class="z-0 m-0 star" style="animation: twinkle ' +
+      (Math.random() * 4 + 4) +
+      's linear ' +
+      (Math.random() * 1 + 1) +
+      's infinite; top: ' +
+      Math.random() * $(window).height() +
+      'px; left: ' +
+      Math.random() * $(window).width() +
+      'px;"></div>';
+    $('.homescreen').append(star);
+  }
+</script>
+<!-- script-->
+
 </head>
 <!-- head end -->
 
@@ -1205,33 +1234,5 @@
 <!-- body end -->
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
-<script src="scroll.js" charset="utf-8"></script>
-<script src="script.js"></script>
-<link rel="stylesheet" href="style.css" />
-
-
-
-<script>
-  for (var i = 0; i < 100; i++) {
-    var star =
-      '<div class="z-0 m-0 star" style="animation: twinkle ' +
-      (Math.random() * 4 + 4) +
-      's linear ' +
-      (Math.random() * 1 + 1) +
-      's infinite; top: ' +
-      Math.random() * $(window).height() +
-      'px; left: ' +
-      Math.random() * $(window).width() +
-      'px;"></div>';
-    $('.homescreen').append(star);
-  }
-</script>
-<!-- script-->
 
 </html>
