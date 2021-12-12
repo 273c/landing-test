@@ -850,6 +850,10 @@ b, strong{
   margin-top: 2rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -1556,20 +1560,6 @@ b, strong{
 
 /* circle logo */
 
-.cls-1{
-  fill:none;
-  stroke:white;
-  stroke-miterlimit:10;
-  stroke-width:4px;
-}
-
-.cls-12{
-  fill:none;
-  stroke:white;
-  stroke-miterlimit:10;
-  stroke-width:4px;
-}
-
 .logo-circle{
   width:60px;
   padding: 4px;
@@ -1606,6 +1596,8 @@ b, strong{
   background-position: bottom 0px right -70px;
   opacity: 1;
 }
+
+/* others --------------------------------------------- */
 
 /* 継続限トップ背景 */
 
@@ -1797,7 +1789,7 @@ b, strong{
 /* Loading アイコンの大きさ設定　*/
 
 #splash_logo img {
-  width:260px;
+  width:250px;
 }
 
 /* fadeUpをするアイコンの動き */
@@ -1834,26 +1826,6 @@ b, strong{
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* SVG遅延読み込み */
-
-svg {
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  -webkit-backface-visibility:hidden;
-}
-
-path {
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  -webkit-backface-visibility:hidden;
-}
-
-grap,circle {
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  -webkit-backface-visibility:hidden;
 }
 
 @media (min-width: 640px) {
@@ -2060,3 +2032,4 @@ grap,circle {
 
 @media (min-width: 1536px) {
 }
+
