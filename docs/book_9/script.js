@@ -79,14 +79,10 @@ $('.nav-link a[href*="#"]').click(function () {//全てのページ内リンク�
 
 
 
-if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) {
-    // スマートフォン向けの記述
-} else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-    // タブレット向けの記述
-} else {
-    // PC向けの記述
+var width = $(window).width();
+if(width > 767){
     luxy.init({
         wrapper: '#luxy',
         wrapperSpeed:  0.09
-      });
+    });
 }
