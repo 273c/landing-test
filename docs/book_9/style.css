@@ -453,8 +453,7 @@ textarea::placeholder {
   color: #9ca3af;
 }
 
-button,
-[role="button"] {
+button {
   cursor: pointer;
 }
 
@@ -1562,6 +1561,9 @@ b, strong{
   stroke:white;
   stroke-miterlimit:10;
   stroke-width:4px;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-backface-visibility:hidden;
 }
 
 .cls-12{
@@ -1569,6 +1571,9 @@ b, strong{
   stroke:white;
   stroke-miterlimit:10;
   stroke-width:4px;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-backface-visibility:hidden;
 }
 
 .logo-circle{
@@ -1578,6 +1583,9 @@ b, strong{
   border-radius: 2px;
   border-color:white;
   border-style: solid;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-backface-visibility:hidden;
 }
 
 .logo-circle2{
@@ -1589,12 +1597,18 @@ b, strong{
   border-color: #ffffff;
   border-style: solid;
   border-width: 1px;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-backface-visibility:hidden;
 }
 
 @media (min-width: 768px) {
   .logo-circle2{
     /* navibar */
     width:70px;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-backface-visibility:hidden;
   }
 }
 
@@ -1837,12 +1851,6 @@ b, strong{
   }
 }
 
-svg {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  transform: translateZ(0);
-}
-
 @media (min-width: 640px) {
   .sm\:mt-6 {
     margin-top: 1.5rem;
@@ -2047,3 +2055,5 @@ svg {
 
 @media (min-width: 1536px) {
 }
+
+
