@@ -76,3 +76,8 @@ $('.nav-link a[href*="#"]').click(function () {//全てのページ内リンク�
     sidebar.classList.toggle("translate-x-full");
     btn.classList.toggle("tham-active");
 });
+
+luxy.init({
+    wrapper: '#luxy',
+    wrapperSpeed:  0.09
+  });
