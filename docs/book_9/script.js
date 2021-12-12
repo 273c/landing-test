@@ -10,15 +10,18 @@ function PageTopAnime() {
 		}
 	}
 }
+
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
-	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
-});
+    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+  });
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
 	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+    
 });
+
 
 // #page-topをクリックした際の設定
 $('#page-top a').click(function () {
@@ -38,9 +41,8 @@ $('#page-link a[href*="#"]').click(function () {//全てのページ内リンク
 
 
 
+
 // スクロールするとロゴの色変更
-
-
 
 jQuery(window).scroll(function() {
         let scrollTop = jQuery(window).scrollTop(); // スクロール上部の位置
@@ -75,13 +77,18 @@ $('.nav-link a[href*="#"]').click(function () {//全てのページ内リンク�
 
 
 if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) {
-    // スマートフォン向けの記述
+     //スマートフォン向けの記述
 } else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
     // タブレット向けの記述
 } else {
     // PC向けの記述
     luxy.init({
         wrapper: '#luxy',
-        wrapperSpeed:  0.09
+        wrapperSpeed:  0.1
       });
 }
+
+
+
+
+
