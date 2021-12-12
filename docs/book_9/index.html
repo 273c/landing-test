@@ -34,34 +34,6 @@
   <link rel="manifest" href="../site.webmanifest">
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
-<script src="scroll.js" charset="utf-8" defer></script>
-<script src="script.js" defer></script>
-<link rel="stylesheet" href="style.css"  media="print" onload="this.media='all'">
-
-
-
-<script>
-  for (var i = 0; i < 100; i++) {
-    var star =
-      '<div class="z-0 m-0 star" style="animation: twinkle ' +
-      (Math.random() * 4 + 4) +
-      's linear ' +
-      (Math.random() * 1 + 1) +
-      's infinite; top: ' +
-      Math.random() * $(window).height() +
-      'px; left: ' +
-      Math.random() * $(window).width() +
-      'px;"></div>';
-    $('.homescreen').append(star);
-  }
-</script>
-<!-- script-->
 
 </head>
 <!-- head end -->
@@ -81,7 +53,7 @@
   <div class="z-10 flex items-center justify-start w-full text-gray-100" id="header">
     <!-- logo -->
     <a class="m-4 " href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle2 " viewBox="0 0 173.8 164.2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle2 lazyload" viewBox="0 0 173.8 164.2">
         <path class="cls-1" d="M4.9 3.8h14.3v43H4.9zm20.1 0h23L32.7 20H46L30.8 36.3 46 34.7m9.6-30.9h26.8L70.9 44M69 3.8 51.8 46M2.1 55.4h78.4m-45.9 0L2.1 103.2m47.8-47.8 30.6 47.8m7.6-93.6h84.1M113 0v22.9M147.4 0v22.9M88.1 51.6l42.1-34.4 42 34.4m-72.6 3.8h59.2"/>
         <circle class="cls-1" cx="158.4" cy="79.8" r="10"/>
         <circle class="cls-1" cx="99.1" cy="79.8" r="10"/>
@@ -102,7 +74,7 @@
       <a class="inline-flex items-center px-2 py-1 space-x-2 text-white bg-blue-500 rounded sm:px-3 sm:font-md font-sm"
         href="https://twitter.com/share?url=https%3A%2F%2Fkissa.x0.com%2Fbook_9%2F&text=%E3%82%AF%E3%83%88%E3%82%A5%E3%83%AB%E3%83%95%E7%A5%9E%E8%A9%B1TRPG%E3%80%80%E9%9D%9E%E5%85%AC%E5%BC%8F%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA%E9%9B%86%E3%80%80%E9%99%90%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E7%AC%AC9%E5%BC%BE%E3%80%8E%E7%B6%99%E7%B6%9A%E9%99%90%E3%80%8F%E5%91%8A%E7%9F%A5%E3%82%B5%E3%82%A4%E3%83%88%7C%E5%96%AB%E8%8C%B6%E9%A3%9F%E5%A0%82&via=kissashokudo&hashtags=%E5%96%AB%E8%8C%B6%E9%A3%9F%E5%A0%82%E7%B6%99%E7%B6%9A%E9%99%90"
         target="_blank">
-        <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg class="w-4 h-4 fill-current lazyload" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M24 5a10 10 0 0 1-3 0 5 5 0 0 0 2-2l-3 1a5 5 0 0 0-8 4C8 8 4 6 2 3a5 5 0 0 0-1 3l2 4a5 5 0 0 1-2-1 5 5 0 0 0 4 5 5 5 0 0 1-2 0 5 5 0 0 0 4 4 10 10 0 0 1-6 2H0a14 14 0 0 0 8 2c9 0 14-8 14-14V7a10 10 0 0 0 2-2z"/>
         </svg>
         <span>Share</span>
@@ -127,7 +99,7 @@
     <div class="flex flex-row items-center w-full ">
       <div class="px-2">
         <a href="#" class="px-2 space-x-2 text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle" viewBox="0 0 173.8 164.2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle lazyload" viewBox="0 0 173.8 164.2">
             <path class="cls-12" d="M5 4h14v43H5zm20 0h23L33 20h13L31 36l15-1M56 4h26L71 44M69 4 52 46M2 55h79m-46 0L2 103m48-48 31 48m7-93h84M113 0v23m34-23v23M88 52l42-35 42 35m-72 3h59"/>
             <circle class="cls-12" cx="158.4" cy="79.8" r="10"/>
             <circle class="cls-12" cx="99.1" cy="79.8" r="10"/>
@@ -194,41 +166,41 @@
 
       <picture class="object-contain object-center w-5/6 mt-6 mb-10 lg:w-1/2">
         <source srcset="image/logo.webp" type="image/webp" />
-        <img alt="hero" src="image/logo.png">
+        <img alt="hero" src="image/logo.png" class="lazyload">
       </picture>
 
 
       <!-- lg only -->
       <div class="items-center justify-center hidden gap-2 lg:grid lg:grid-cols-5 " id="page-link">
         <div class="mx-5 icon_anim">
-          <a href="#1" class=""><img src="image/icon/1.png" alt="image" class="icon"> </a>
+          <a href="#1" class=""><img src="image/icon/1.png" alt="image" class="icon lazyload"> </a>
         </div>
         <div class="mx-5 icon_anim">
-          <a href="#2" class=""><img src="image/icon/2.png" alt="image" class="icon"></a>
+          <a href="#2" class=""><img src="image/icon/2.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-5 icon_anim">
-          <a href="#3" class=""><img src="image/icon/3.png" alt="image" class="icon"></a>
+          <a href="#3" class=""><img src="image/icon/3.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-5 icon_anim">
-          <a href="#4" class=""><img src="image/icon/4.png" alt="image" class="icon"></a>
+          <a href="#4" class=""><img src="image/icon/4.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-5 icon_anim">
-          <a href="#5" class=""><img src="image/icon/5.png" alt="image" class="icon"></a>
+          <a href="#5" class=""><img src="image/icon/5.png" alt="image" class="icon lazyload"></a>
         </div>
       </div>
       <div class="items-center hidden gap-2 mx-auto mt-8 lg:m-1/2 lg:grid lg:grid-cols-4"
         id="page-link">
         <div class="mx-5 icon_anim">
-          <a href="#6" class=""><img src="image/icon/6.png" alt="image" class="icon"></a>
+          <a href="#6" class=""><img src="image/icon/6.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-5 icon_anim">
-          <a href="#7" class=""><img src="image/icon/7.png" alt="image" class="icon"></a>
+          <a href="#7" class=""><img src="image/icon/7.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-5 icon_anim">
-          <a href="#8" class=""><img src="image/icon/8.png" alt="image" class="icon"></a>
+          <a href="#8" class=""><img src="image/icon/8.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-5 icon_anim">
-          <a href="#9" class=""><img src="image/icon/9.png" alt="image" class="icon"></a>
+          <a href="#9" class=""><img src="image/icon/9.png" alt="image" class="icon lazyload"></a>
         </div>
       </div>
       <!-- lg only end -->
@@ -237,31 +209,31 @@
       <div class="grid flex-wrap items-center justify-center w-full grid-cols-3 gap-2 justify-items-center lg:hidden"
         id="page-link">
         <div class="mx-4">
-          <a href="#1" class=""><img src="image/icon/1.png" alt="image" class="icon"> </a>
+          <a href="#1" class=""><img src="image/icon/1.png" alt="image" class="icon lazyload"> </a>
         </div>
         <div class="mx-4">
-          <a href="#2" class=""><img src="image/icon/2.png" alt="image" class="icon"></a>
+          <a href="#2" class=""><img src="image/icon/2.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-4">
-          <a href="#3" class=""><img src="image/icon/3.png" alt="image" class="icon"></a>
+          <a href="#3" class=""><img src="image/icon/3.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-4">
-          <a href="#4" class=""><img src="image/icon/4.png" alt="image" class="icon"></a>
+          <a href="#4" class=""><img src="image/icon/4.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-4">
-          <a href="#5" class=""><img src="image/icon/5.png" alt="image" class="icon"></a>
+          <a href="#5" class=""><img src="image/icon/5.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-4">
-          <a href="#6" class=""><img src="image/icon/6.png" alt="image" class="icon"></a>
+          <a href="#6" class=""><img src="image/icon/6.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-4">
-          <a href="#7" class=""><img src="image/icon/7.png" alt="image" class="icon"></a>
+          <a href="#7" class=""><img src="image/icon/7.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-4">
-          <a href="#8" class=""><img src="image/icon/8.png" alt="image" class="icon"></a>
+          <a href="#8" class=""><img src="image/icon/8.png" alt="image" class="icon lazyload"></a>
         </div>
         <div class="mx-4">
-          <a href="#9" class=""><img src="image/icon/9.png" alt="image" class="icon"></a>
+          <a href="#9" class=""><img src="image/icon/9.png" alt="image" class="icon lazyload"></a>
         </div>
       </div>
       <!-- sm only end -->
@@ -279,7 +251,7 @@
 
         <picture class="object-contain object-center">
           <img class="hidden w-4/5 mx-auto mb-8 lg:inline-block xl:w-3/5 " alt="hero" src="image/aori.png">
-          <img class="w-full px-2 mx-auto mb-9 lg:hidden md:px-8 " alt="hero" src="image/aori_mobile.png">
+          <img class="w-full px-2 mx-auto mb-9 lg:hidden md:px-8 lazyload" alt="hero" src="image/aori_mobile.png">
         </picture>
 
         <p class="px-6 mx-auto mt-8 text-sm sm:mt-12 sm:text-base">限シリーズ第９弾『継続限』では、様々なシナリオを経て成長した<font color="text-book4">「継続探索者」
@@ -294,7 +266,7 @@
               <!-- trailer webp -->
               <picture class="object-contain object-center rounded ">
                 <source srcset="image/book.webp" type="image/webp" />
-                <img src="image/book.png" class="" /><!-- ブラウザがwebpに対応していない場合に表示 -->
+                <img src="image/book.png" class=" lazyload" /><!-- ブラウザがwebpに対応していない場合に表示 -->
               </picture>
               <!-- trailer webp end -->
             </a>
@@ -373,7 +345,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/sebata1.webp" type="image/webp" />
               <img src="image/trailer/sebata1.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -382,7 +354,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block ">
               <div class="inline-flex">
-                <img src="image/icon/1.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/1.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left">
@@ -394,7 +366,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base font-bold member">せばた</p>
@@ -449,7 +421,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/sebata2.webp" type="image/webp" />
               <img src="image/trailer/sebata2.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -458,7 +430,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block ">
               <div class="inline-flex">
-                <img src="image/icon/2.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/2.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left">
@@ -470,7 +442,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base font-bold member">せばた</p>
@@ -523,7 +495,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/sebata3.webp" type="image/webp" />
               <img src="image/trailer/sebata3.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -532,7 +504,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block">
               <div class="inline-flex">
-                <img src="image/icon/3.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/3.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left ">
@@ -544,7 +516,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base font-bold member">せばた</p>
@@ -602,7 +574,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/koduki1.webp" type="image/webp" />
               <img src="image/trailer/koduki1.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -611,7 +583,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block ">
               <div class="inline-flex">
-                <img src="image/icon/4.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/4.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left ">
@@ -623,7 +595,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base member">香月悠 (<a href="https://twitter.com/koduki_you">Twitter</a>/<a
@@ -682,7 +654,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/koduki2.webp" type="image/webp" />
               <img src="image/trailer/koduki2.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -691,7 +663,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block">
               <div class="inline-flex">
-                <img src="image/icon/5.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/5.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left">
@@ -703,7 +675,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base member">香月悠 (<a href="https://twitter.com/koduki_you">Twitter</a>/<a
@@ -762,7 +734,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/miyaku.webp" type="image/webp" />
               <img src="image/trailer/miyaku.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -771,7 +743,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block">
               <div class="inline-flex">
-                <img src="image/icon/6.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/6.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left ">
@@ -783,7 +755,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base member">みやく (<a href="https://twitter.com/ohmiya93">Twitter</a>/<a
@@ -841,7 +813,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/beta.webp" type="image/webp" />
               <img src="image/trailer/beta.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -850,7 +822,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block">
               <div class="inline-flex">
-                <img src="image/icon/7.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/7.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left ">
@@ -862,7 +834,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base member">ベータ (<a href="https://twitter.com/beta_trpg">Twitter</a>)</p>
@@ -920,7 +892,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/hoshino.webp" type="image/webp" />
               <img src="image/trailer/hoshino.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -929,7 +901,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block">
               <div class="inline-flex">
-                <img src="image/icon/8.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/8.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left">
@@ -941,7 +913,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base member">星野 (<a href="https://twitter.com/star_clans">Twitter</a>)</p>
@@ -1003,7 +975,7 @@
             <picture class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4">
               <source srcset="image/trailer/tatsuhara.webp" type="image/webp" />
               <img src="image/trailer/tatsuhara.png"
-                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4" />
+                class="container object-contain object-top w-11/12 rounded-md lg:w-2/3 md:w-3/4 lazyload" />
               <!-- ブラウザがwebpに対応していない場合に表示 -->
             </picture>
             <!-- trailer webp end -->
@@ -1012,7 +984,7 @@
           <div class="flex flex-row items-center justify-center w-full mt-4 mb-2 sm:mt-6">
             <div class="hidden mx-4 text-center md:inline-block">
               <div class="inline-flex">
-                <img src="image/icon/9.png" alt="image" class="p-2 rounded-full icon2 bg-book2">
+                <img src="image/icon/9.png" alt="image" class="p-2 rounded-full icon2 bg-book2 lazyload">
               </div>
             </div>
             <div class="mx-2 my-2 text-left ">
@@ -1024,7 +996,7 @@
           <div class="container justify-center w-full px-4 mt-4 mb-4 md:flex md:flex-row lg:px-0">
             <div class="w-full py-0 text-center md:w-1/3 ">
               <div class="inline-flex items-center justify-center ">
-                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full">
+                <img src="image/chart/sample.png" alt="image" class="w-2/3 p-2 sm:w-full lazyload">
               </div>
               <div class="text-center ">
                 <p class="text-base member">竜原 (<a href="https://twitter.com/tthrpg">Twitter</a>/<a
@@ -1088,12 +1060,12 @@
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col w-full mb-20 text-center">
         <h1 class="mb-4 text-4xl font-medium title-font ">Scenario List</h1>
-        <!-- <p class="mx-auto text-base leading-relaxed lg:w-1/2">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.</p> -->
+
       </div>
       <div class="flex flex-wrap -m-2 ">
         <div class="w-full p-2 lg:w-1/3 md:w-1/2 ">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/1.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">Give me MUSCLE!</h2>
@@ -1103,7 +1075,7 @@
         </div>
         <div class="w-full p-2 lg:w-1/3 md:w-1/2">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/2.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">探索者対抗!!二人三脚障害物レース</h2>
@@ -1113,7 +1085,7 @@
         </div>
         <div class="w-full p-2 lg:w-1/3 md:w-1/2">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/3.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">座禅 -THE ZEN-</h2>
@@ -1124,7 +1096,7 @@
 
         <div class="w-full p-2 lg:w-1/3 md:w-1/2">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/4.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">探索者が神話生物相手に無双するようですよ？</h2>
@@ -1134,7 +1106,7 @@
         </div>
         <div class="w-full p-2 lg:w-1/3 md:w-1/2">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/5.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">彼方より来たるディアスティマ</h2>
@@ -1144,7 +1116,7 @@
         </div>
         <div class="w-full p-2 lg:w-1/3 md:w-1/2">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/6.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">東京チアフルコラボ</h2>
@@ -1154,7 +1126,7 @@
         </div>
         <div class="w-full p-2 lg:w-1/3 md:w-1/2">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/7.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">誰そ彼タイムカプセル</h2>
@@ -1164,7 +1136,7 @@
         </div>
         <div class="w-full p-2 lg:w-1/3 md:w-1/2">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/8.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">道連れラリーレイド</h2>
@@ -1174,7 +1146,7 @@
         </div>
         <div class="w-full p-2 lg:w-1/3 md:w-1/2">
           <div class="flex items-center h-full p-4 border rounded-lg Slist-border">
-            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book"
+            <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 rounded-full bg-book lazyload"
               src="image/icon/9.png">
             <div class="flex-grow">
               <h2 class="font-medium title-font">夢見るホーリーキャロル</h2>
@@ -1204,7 +1176,7 @@
 
       </div>
       <div class="flex items-center justify-center w-full mt-14">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle" viewBox="0 0 173.8 164.2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="logo-circle lazyload" viewBox="0 0 173.8 164.2">
             <path class="cls-12" d="M5 4h14v43H5zm20 0h23L33 20h13L31 36l15-1M56 4h26L71 44M69 4 52 46M2 55h79m-46 0L2 103m48-48 31 48m7-93h84M113 0v23m34-23v23M88 52l42-35 42 35m-72 3h59"/>
             <circle class="cls-12" cx="158.4" cy="79.8" r="10"/>
             <circle class="cls-12" cx="99.1" cy="79.8" r="10"/>
@@ -1222,7 +1194,7 @@
   <!-- footer end -->
 </div>
 
-  <p id="page-top"><a href="#header"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+  <p id="page-top"><a href="#header"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lazyload" viewBox="0 0 20 20"
         fill="currentColor">
         <path fill-rule="evenodd"
           d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
@@ -1233,6 +1205,35 @@
 </body>
 <!-- body end -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script src="scroll.js" charset="utf-8" defer></script>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css"  media="print" onload="this.media='all'">
+
+
+
+<script>
+for (var i = 0; i < 100; i++) {
+var star =
+  '<div class="z-0 m-0 star" style="animation: twinkle ' +
+  (Math.random() * 4 + 4) +
+  's linear ' +
+  (Math.random() * 1 + 1) +
+  's infinite; top: ' +
+  Math.random() * $(window).height() +
+  'px; left: ' +
+  Math.random() * $(window).width() +
+  'px;"></div>';
+$('.homescreen').append(star);
+}
+</script>
+<!-- script-->
 
 
 </html>
