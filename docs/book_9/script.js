@@ -1,44 +1,21 @@
-function PageTopAnime() {
-	var scroll = $(window).scrollTop();
-	if (scroll >= 200){//上から200pxスクロールしたら
-		$('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
-		$('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
-	}else{
-		if($('#page-top').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
-			$('#page-top').removeClass('UpMove');//UpMoveというクラス名を除き
-			$('#page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
-		}
-	}
-}
+//logoの表示
 
-// 画面をスクロールをしたら動かしたい場合の記述
-$(window).scroll(function () {
-    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+$(window).on('load',function(){
+    $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+    $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
   });
 
-// ページが読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load', function () {
-	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
-    
-});
 
 
-// #page-topをクリックした際の設定
-$('#page-top a').click(function () {
-    $('body,html').animate({
-        scrollTop: 0//ページトップまでスクロール
-    }, 600);//ページトップスクロールの速さ。数字が大きいほど遅くなる
-    return false;//リンク自体の無効化
-});
 
-$('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
+//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
+
+$('#page-link a[href*="#"]').click(function () {
 	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
 	var pos = $(elmHash).offset().top-0;	//idの上部の距離を取得
 	$('body,html').animate({scrollTop: pos}, 900); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
 	return false;
 });
-
-
 
 
 
@@ -75,6 +52,7 @@ $('.nav-link a[href*="#"]').click(function () {//全てのページ内リンク�
 });
 
 
+//luxy.js　振り分け
 
 if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) {
      //スマートフォン向けの記述
@@ -90,5 +68,41 @@ if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('An
 
 
 
+
+
+// page-top
+
+function PageTopAnime() {
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200){//上から200pxスクロールしたら
+		$('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
+		$('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
+	}else{
+		if($('#page-top').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
+			$('#page-top').removeClass('UpMove');//UpMoveというクラス名を除き
+			$('#page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
+		}
+	}
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+  });
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+    
+});
+
+
+// #page-topをクリックした際の設定
+$('#page-top a').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 600);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
 
 
