@@ -7,3 +7,4 @@ tailwind.config.js
 .gitignore
 My project.pdf
 postcss.config.js
+.htaccess

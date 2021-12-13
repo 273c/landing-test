@@ -1,11 +1,3 @@
-//logoの表示
-
-$(window).on('load',function(){
-    $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-    $("#splash_logo").delay(1500).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-  });
-
-
 
 
 //全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
@@ -68,8 +60,6 @@ if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('An
 
 
 
-
-
 // page-top
 
 function PageTopAnime() {
@@ -85,18 +75,6 @@ function PageTopAnime() {
 	}
 }
 
-// 画面をスクロールをしたら動かしたい場合の記述
-$(window).scroll(function () {
-    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
-  });
-
-// ページが読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load', function () {
-	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
-    
-});
-
-
 // #page-topをクリックした際の設定
 $('#page-top a').click(function () {
     $('body,html').animate({
@@ -105,3 +83,16 @@ $('#page-top a').click(function () {
     return false;//リンク自体の無効化
 });
 
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+  });
+
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+    $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+    $("#splash_logo").delay(1500).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+    $('body').css('display', 'block');
+});

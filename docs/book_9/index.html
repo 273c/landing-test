@@ -12,6 +12,8 @@
   <link rel="canonical" href="http://kissa.x0.com/book_9/" />
 
   <title>継続限|喫茶食堂</title>
+ 
+
 
   <!-- Twitter Card-->
   <meta property="og:url" content="http://kissa.x0.com/book_9/" />
@@ -35,6 +37,7 @@
 
 
 
+
 </head>
 <!-- head end -->
 
@@ -50,7 +53,9 @@
 
 
   <!-- mobile menu bar -->
-  <div class="z-10 flex items-center justify-start w-full text-gray-100" id="header">
+  <div id="header">
+    
+  <div class="z-10 flex items-center justify-start w-full text-gray-100">
     <!-- logo -->
     <a class="m-4 " href="#">
       <img data-src="image/2.png" alt="" class="logo-circle2 lazyload">
@@ -140,7 +145,7 @@
     </nav>
   </div>
 
-
+</div><!-- #header -->
 
 <div id="luxy" class="overflow-hidden">
 
@@ -1171,46 +1176,45 @@
   <!-- footer end -->
 </div>
 
-  <p id="page-top"><a href="#header"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lazyload" viewBox="0 0 20 20"
+  <div id="page-top">
+    <a href="#header"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lazyload" viewBox="0 0 20 20"
         fill="currentColor">
         <path fill-rule="evenodd"
           d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
           clip-rule="evenodd" />
-      </svg></a></p>
+      </svg></a></div>
 
 
 </body>
 <!-- body end -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
 integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
-<script src="lazysizes.min.js" async=""></script>
+<script src="lazysizes.min.js" defer></script>
 <script src="scroll.js" charset="utf-8" defer></script>
 <script src="script.js" defer></script>
-<link rel="stylesheet" href="style.css"  media="print" onload="this.media='all'">
 
+<link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 
-
-<script>
-for (var i = 0; i < 100; i++) {
-var star =
-  '<div class="z-0 m-0 star" style="animation: twinkle ' +
-  (Math.random() * 4 + 4) +
-  's linear ' +
-  (Math.random() * 1 + 1) +
-  's infinite; top: ' +
-  Math.random() * $(window).height() +
-  'px; left: ' +
-  Math.random() * $(window).width() +
-  'px;"></div>';
-$('.homescreen').append(star);
-}
-</script>
 <!-- script-->
+<script>
+  for (var i = 0; i < 100; i++) {
+  var star =
+    '<div class="z-0 m-0 star" style="animation: twinkle ' +
+    (Math.random() * 4 + 4) +
+    's linear ' +
+    (Math.random() * 1 + 1) +
+    's infinite; top: ' +
+    Math.random() * $(window).height() +
+    'px; left: ' +
+    Math.random() * $(window).width() +
+    'px;"></div>';
+  $('.homescreen').append(star);
+  }
+  </script>
 
 
 </html>
