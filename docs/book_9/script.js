@@ -84,15 +84,15 @@ $('#page-top a').click(function () {
 });
 
 
-// 画面をスクロールをしたら動かしたい場合の記述
+// スクロールした際の動きの関数を呼ぶ
 $(window).scroll(function () {
-    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+    PageTopAnime();
   });
 
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
-    $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-    $("#splash_logo").delay(1500).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+    $("#splash").delay(1500).fadeOut('slow');
+    $("#splash_logo").delay(1500).fadeOut('slow');
     $('body').css('display', 'block');
 });
