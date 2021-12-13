@@ -92,7 +92,7 @@ $(window).scroll(function () {
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
-    $("#splash").delay(1500).fadeOut('slow');
-    $("#splash_logo").delay(1500).fadeOut('slow');
+    $("#splash").delay(1300).fadeOut('slow');
+    $("#splash_logo").delay(1300).fadeOut('slow');
     $('body').css('display', 'block');
 });
