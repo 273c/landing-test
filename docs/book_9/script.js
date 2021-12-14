@@ -9,6 +9,7 @@ $('#page-link a[href*="#"]').click(function () {
 	return false;
 });
 
+
 // ナビゲーション
 
 // grab everything we need
