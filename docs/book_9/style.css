@@ -33760,6 +33760,7 @@ b, strong, .bold{
 /* text contents  */
 
 section.wrap{
+  margin: 1.5rem;
   justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
