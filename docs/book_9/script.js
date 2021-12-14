@@ -9,23 +9,6 @@ $('#page-link a[href*="#"]').click(function () {
 	return false;
 });
 
-
-
-// スクロールするとロゴの色変更
-
-jQuery(window).scroll(function() {
-        let scrollTop = jQuery(window).scrollTop(); // スクロール上部の位置
-        let areaTop = jQuery("main").offset().top ; // 対象エリアの上部の位置
-        let areaBottom = areaTop + jQuery("main").innerHeight(); // 対象エリアの下部の位置
-        if (scrollTop > areaTop && scrollTop < areaBottom) {
-            jQuery("#burger").removeClass("bg-white");
-            jQuery("#burger").addClass("bg-book");
-        } else {
-            jQuery("#burger").removeClass("bg-book");
-            jQuery("#burger").addClass("bg-white");
-        }
-    });
-
 // ナビゲーション
 
 // grab everything we need
@@ -84,14 +67,23 @@ $('#page-top a').click(function () {
 });
 
 
-// スクロールした際の動きの関数を呼ぶ
-$(window).scroll(function () {
+ $(window).scroll(function() {
     PageTopAnime();
-  });
 
+	let areaTop = $("#main").offset().top; // 対象エリアの上部の位置
+	let areaBottom = areaTop + $("#main").innerHeight(); // 対象エリアの下部の位置
+
+	if ($(this).scrollTop() > areaTop && $(this).scrollTop() < areaBottom) {
+        $("#burger").removeClass("bg-white");
+        $("#burger").addClass("bg-book");
+	} else {
+	    $("#burger").removeClass("bg-book");
+        $("#burger").addClass("bg-white");
+	}
+});
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load', function () {
+$(window).on('scroll load', function () {
     $("#splash").delay(1300).fadeOut('slow');
     $("#splash_logo").delay(1300).fadeOut('slow');
     $('body').css('display', 'block');
