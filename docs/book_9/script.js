@@ -1,14 +1,24 @@
 
 
-$('#page-link a[href*="#"]').click(function () {
-	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
-	var pos = $(elmHash).offset().top-0;	//idの上部の距離を取得
-	$('body,html').animate({scrollTop: pos}, 900); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
-	return false;
-});
 
-
-
+$(function(){
+    // #で始まるa要素をクリックした場合に処理（"#"←ダブルクォーテンションで囲むのを忘れずに。忘れるとjQueryのバージョンによっては動かない。。）
+    $('a[href^="#"]').click(function(){
+      // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
+      var adjust = 0;
+      // スクロールの速度（ミリ秒）
+      var speed = 400;
+      // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
+      var href= $(this).attr("href");
+      // 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
+      var position = target.offset().top + adjust;
+      // スムーススクロール linear（等速） or swing（変速）
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  });
 
 // ナビゲーション
 
@@ -85,6 +95,7 @@ $('#page-top a').click(function () {
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('scroll load', function () {
+    PageTopAnime();
     $("#splash").delay(1300).fadeOut('slow');
     $("#splash_logo").delay(1300).fadeOut('slow');
     $('body').css('display', 'block');
